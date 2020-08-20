@@ -9,13 +9,13 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
+
+
+
+
 <header>
 
   <nav>
-    <a href="index.html">
-      <img src="images/Garner-Guitar-Site-Logo.png" width="120" alt="Garner Guitar logo">
-    </a>
-
     <div class="navbar">
 
       <!-- <a href="courses/index.html">Courses</a> -->
@@ -43,96 +43,115 @@
           <i class="fa fa-caret-down"></i>
         </button>
         <div class="dropdown-content">
-          <a href="resources/printables.html">Printables</a>
-          <a href="resources/backing-tracks.html">Backing tracks</a>
-          <a href="resources/sight-reading.html">Sight reading</a>
-          <a href="resources/transcriptions.html">Transcriptions</a>
-          <a href="https://www.google.com/search?q=metronome" target="_blank">Metronome</a>
-          <a href="resources/tuner.html">Tuner</a>
+          <a href="resources/printables.html" class="submenu">Printables</a>
+          <a href="resources/backing-tracks.html" class="submenu">Backing tracks</a>
+          <a href="resources/sight-reading.html" class="submenu">Sight reading</a>
+          <a href="resources/transcriptions.html" class="submenu">Transcriptions</a>
+          <a href="https://www.google.com/search?q=metronome" target="_blank" class="submenu">Metronome</a>
+          <a href="resources/tuner.html" class="submenu">Tuner</a>
           <hr>
           <a href="#">Blog</a></li>
           <a href="#">Podcast</a></li>
-          <a href="https://www.youtube.com/c/garnerguitar" target="_blank">YouTube</a>
-          <a href="https://www.instagram.com/garnerguitar" target="_blank">Instagram</a>
+          <a href="https://www.youtube.com/c/garnerguitar" target="_blank" class="submenu">YouTube</a>
+          <a href="https://www.instagram.com/garnerguitar" target="_blank" class="submenu">Instagram</a>
           <a href="https://LaneGarner.com" target="_blank">Lane Garner Music</a>
-          <a href="https://distrokid.com/hyperfollow/lanegarner/wooden-robots" target="_blank">Wooden
+          <a href="https://distrokid.com/hyperfollow/lanegarner/wooden-robots" target="_blank" class="submenu">Wooden
             Robots</a>
-          <a href="https://fundamentalmusix.com" target="_blank">Fundamental.</a>
+          <a href="https://fundamentalmusix.com" target="_blank" class="submenu">Fundamental.</a>
         </div>
       </div>
 
+      <!-- 
+      <a href="#">Contact</a> -->
 
-      <a href="#">Contact</a>
 
-
-      <span>
+      <!-- <span>
         <a href="url">Sign up</a>
         <a href="url">Login</a>
-      </span>
+      </span> -->
     </div>
   </nav>
 </header>
 
+
+
+
+
+
 <body>
-  <div>
+  <div class="divider">
+    <button type="button" id="sign-up"><a href="courses/index.html">Sign up</a></button>
+    <h1 id="logo-heading">GarnerGuitar.com</h1>
+
+    <a href="index.html">
+      <img src="images/garner-guitar-circle-logo-image-guitar-lessons-austin-online.png" id="logo"
+        alt="Garner Guitar logo">
+    </a>
     <h2>Learn guitar.<br> Improve your skills.<br> Take your playing to the next level.</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-      et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-      pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-      laborum.</p>
   </div>
 
-  <div>
-    <h5>Courses</h5>
-    <p>Highly detailed courses to improve up your playing</p>
-    <img src="images/course-icon.jpg" alt=“courses”>
-    <br>
-    <br>
-    <p>
-      <a href="courses/index.html">Learn more</a></p>
+  <div class="cards">
+    <div class="card">
+      <h2>Courses</h2>
+      <img src="images/course-icon.jpg" alt=“courses”>
+      <p>Highly detailed courses to improve up your playing</p>
+      <button type="button"><a href="courses/index.html">Learn more</a></button>
+    </div>
+
+    <div>
+      <h2 class="card-title">Online Lessons</h2>
+      <img src="images/zoomLogo.png" alt=“Zoom logo”>
+      <p class="card-text">Virtual lessons on Zoom</p>
+      <button type="button"><a href="http://myonlineguitarlessons.net" target="_blank">Learn more</a></button>
+    </div>
+
+    <div>
+      <h2>ATX Lessons</h2>
+      <img src="images/map-of-austin.jpg" alt=“map of austin”>
+      <p>In-home lessons around the greater Austin area</p>
+      <button type="button"><a href="http://austintexasguitarlessons.com" target="_blank">Learn more</a></button>
+    </div>
+
+
+    <div>
+      <h2 class="card-title">Book</h2>
+      <a href="pages/book.html"><img src="images/Garner-Guitar-Book-Cover.jpg" alt="Garner Guitar Book Cover"></a>
+      <p>Paragraph</p>
+      <button type="button"><a href="pages/book.html" _blank">Learn more</a></button>
+    </div>
   </div>
 
-  <div>
-    <h5>ATX Lessons</h5>
-    <p>In-home lessons around the greater Austin area</p>
-    <img src="images/map-of-austin.jpg" alt=“map of austin”>
-    <p><a href="http://austintexasguitarlessons.com" target="_blank">Learn more</a></p>
-  </div>
-
-  <div>
-    <h5 class="card-title">Online Lessons</h5>
-    <p class="card-text">Virtual lessons on Zoom</p>
-    <img src="images/zoomLogo.png" alt=“Zoom logo”>
-    <p><a href="http://myonlineguitarlessons.net" target="_blank">Learn more</a></p>
-  </div>
-
-  <div>
-    <h1>Free Video Lessons</h1>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/dL5Kc3EQ79k" frameborder="0"
+  <h2 class="second-header">Free Video Lessons</h2>
+  <div class="video-grid">
+    <iframe class="video-element" width="560" height="315" src="https://www.youtube.com/embed/dL5Kc3EQ79k"
       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/4_m1PzagTtQ" frameborder="0"
+    <iframe class="video-element" width="560" height="315" src="https://www.youtube.com/embed/4_m1PzagTtQ"
       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/gy92W5Bau9E" frameborder="0"
+    <iframe class="video-element" width="560" height="315" src="https://www.youtube.com/embed/gy92W5Bau9E"
       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/v8wNO73OYFo" frameborder="0"
+    <iframe class="video-element" width="560" height="315" src="https://www.youtube.com/embed/v8wNO73OYFo"
       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/0D0UDSUqQ9I" frameborder="0"
+    <iframe class="video-element" width="560" height="315" src="https://www.youtube.com/embed/0D0UDSUqQ9I"
       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/WvZGqBRIUoE" frameborder="0"
+    <iframe class="video-element" width="560" height="315" src="https://www.youtube.com/embed/WvZGqBRIUoE"
       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
 
-  <h1>Book</h1>
+  <h2>About Me</h2>
+  <a href="http://www.lanegarner.com"><img src="images/lane-garner-guitar-lessons-online-austin-texas.jpg"
+      class="profilePic" alt="Photo of Lane Garner"></a>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda temporibus maiores fugiat saepe laudantium
+    ratione in est possimus officiis nobis unde, consequatur deleniti excepturi. Animi error impedit ipsa veniam
+    distinctio.</p>
+
+
+  <h2>Podcast</h2>
   <p>Paragraph</p>
 
-  <h1>Podcast</h1>
+  <h2>Blog</h2>
   <p>Paragraph</p>
 
-  <h1>Blog</h1>
-  <p>Paragraph</p>
-
-  <h1>Mailing List</h1>
+  <h2>Mailing List</h2>
   <p>Paragraph</p>
 
   <div>

@@ -1,27 +1,68 @@
-h1 {
-  color: rgb(52, 59, 63);
+/* * {
+  all: unset;
+} */
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+#logo {
+  width: 300px;
+}
+
+#sign-up {
+  margin: 50px;
+  font-size: 2rem;
+  padding: 10px;
+  margin: 20px auto 0px auto;
+}
+
+#logo-heading {
+  color: #83e7cb;
+  background: #00000044;
   font-family: "Bebas Neue", sans-serif;
-  margin-left: 10px;
+  text-align: center;
+  font-size: 8vw;
+  margin: 30px;
+}
+
+h1{
+  padding: 0px;
 }
 
 p {
   margin-left: 10px;
 }
 
+.dropdown-content a {
+  color: white;
+}
+
 /* copied from W3 below*/
 
 .navbar {
   overflow: hidden;
-  background-color: #5B6062;
+  background-color: #EAECEF;
+  margin-bottom: 0px;
 }
 
-.navbar a {
-  float: left;
+.dropbtn {
+   float: right;
   font-size: 16px;
-  color: white;
+  color: #565B5E;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  font-size: 30px;
+}
+
+.navbar a {
+  float: right;
+  font-size: 16px;
+  color: #565B5E;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 30px;
 }
 
 .dropdown {
@@ -33,7 +74,7 @@ p {
   font-size: 16px;  
   border: none;
   outline: none;
-  color: white;
+  color: #565B5E;
   padding: 14px 16px;
   background-color: inherit;
   font-family: inherit;
@@ -47,7 +88,7 @@ p {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: #565B5EAA;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -55,7 +96,7 @@ p {
 
 .dropdown-content a {
   float: none;
-  color: black;
+  color: #565B5E;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -63,8 +104,9 @@ p {
 }
 
 .dropdown-content a:hover {
-  /* background-color: #ddd; */
-  background-color: #EAECEF;
+  background-color: #697078;
+  color:
+
 }
 
 .dropdown:hover .dropdown-content {
@@ -72,3 +114,78 @@ p {
 }
 
 /* copied from W3 above*/
+/* 
+.divider {
+  background: #EAECEF;
+} */
+
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+}
+
+button {
+  background: #E3C24D;
+  border: none;
+  border-radius: 10px;
+  font-size: 40px;
+  text-align: center;
+}
+
+button a {
+  text-decoration: none;
+  color: white;
+}
+
+.divider {
+  background: url(images/Online-guitar-lessons.jpeg);
+  min-height: 500px; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.divider h2 {
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 100px;
+  padding: ;
+}
+
+.second-header {
+  color: #5B7D91;
+  font-family: "Bebas Neue", sans-serif;
+  text-align: center;
+  font-size: 100px;
+  margin: 100px auto 50px auto;
+}
+
+.video-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.video-element {
+  margin: 20px;
+}
+
+.profilePic {
+  border-radius: 50%;
+  width: 25%;
+}
+
+@media screen and (max-width: 768px) {
+  .cards {
+    flex-direction: column;
+  }
+}
