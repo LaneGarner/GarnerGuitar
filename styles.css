@@ -1,102 +1,112 @@
-/* * {
-  all: unset;
-} */
-body {
+/* Base reset */
+* {
+  margin: 0;
+  padding: 0;
   font-family: 'Source Sans Pro', sans-serif;
+  /* font-family: raleway, sans-serif; */
 }
 
-#logo {
-  width: 300px;
-}
+/* NAV */
 
-#sign-up {
-  margin: 50px;
-  font-size: 2rem;
-  padding: 10px;
-  margin: 20px auto 0px auto;
+nav {
+  position: fixed;
+  top: 0;
 }
-
-#logo-heading {
-  color: #83e7cb;
-  background: #00000044;
-  font-family: "Bebas Neue", sans-serif;
-  text-align: center;
-  font-size: 8vw;
-  margin: 30px;
-}
-
-h1{
-  padding: 0px;
-}
-
-p {
-  margin-left: 10px;
-}
-
-.dropdown-content a {
-  color: white;
-}
-
-/* copied from W3 below*/
 
 .navbar {
+  width: 100vw;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
   overflow: hidden;
-  background-color: #EAECEF;
+  background: #EAECEF;
   margin-bottom: 0px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
+#thumbnail-logo {
+  display: flex;
+  width: 40px;
+  margin: auto 10px;
+  padding-right: 5px;
+}
+
+
+#logo-heading {
+  color: #565B5E;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 40px;
+  padding: auto 25px;
+  margin-top: 5px;
+  text-shadow: 2px 2px #83e7cb;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+.nav-link, .dropbtn {
+  color: #565B5E;
+  text-align: center;
+  padding: 10px;
+  margin: 0px 20px;
+  text-decoration: none;
+  font-size: 18px;
+  border: none;
+  background: #EAECEF;
+}
+/*  
 .dropbtn {
-   float: right;
-  font-size: 16px;
   color: #565B5E;
   text-align: center;
-  padding: 14px 16px;
+  padding: 10px;
+  margin: 0px 20px;
   text-decoration: none;
-  font-size: 30px;
-}
+  font-size: 18px;
+  border: none;
+} */
 
-.navbar a {
-  float: right;
-  font-size: 16px;
-  color: #565B5E;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 30px;
-}
+.dropbtn
 
 .dropdown {
   float: left;
   overflow: hidden;
+  /* margin: 0; */
 }
 
 .dropdown .dropbtn {
-  font-size: 16px;  
   border: none;
   outline: none;
   color: #565B5E;
   padding: 14px 16px;
-  background-color: inherit;
+  background: inherit;
   font-family: inherit;
-  margin: 0;
+  /* margin: 0; */
 }
 
-.navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: #697078; 
+.nav-link:hover, .dropdown:hover .dropbtn {
+  background-color: #83e7cb;
+  color: white; 
+  border-radius: 5px;
+  /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+  /* border-bottom: 20px solid #83e7cb; */
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #565B5EAA;
+  background-color: #565B5EE9;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  border-top: 6px solid #83e7cb;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  /* border-radius: 8px; */
 }
 
 .dropdown-content a {
   float: none;
-  color: #565B5E;
+  color: white;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -105,8 +115,6 @@ p {
 
 .dropdown-content a:hover {
   background-color: #697078;
-  color:
-
 }
 
 .dropdown:hover .dropdown-content {
@@ -114,31 +122,6 @@ p {
 }
 
 /* copied from W3 above*/
-/* 
-.divider {
-  background: #EAECEF;
-} */
-
-
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  text-align: center;
-}
-
-button {
-  background: #E3C24D;
-  border: none;
-  border-radius: 10px;
-  font-size: 40px;
-  text-align: center;
-}
-
-button a {
-  text-decoration: none;
-  color: white;
-}
 
 .divider {
   background: url(images/Online-guitar-lessons.jpeg);
@@ -151,6 +134,70 @@ button a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+#logo {
+  width: 300px;
+  margin-top: 250px;
+}
+
+#sign-up {
+  background: #E3C24D;
+  border: none;
+  border-radius: 10px;
+  font-size: 30px;
+  text-align: center;
+  padding: 20px;
+  margin: 60px auto 60px auto;
+  /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+}
+
+p {
+  margin: 20px auto 20px 40px;
+  font-size: 18px;
+}
+
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.card {
+  margin: 2rem;
+  padding: auto 20px;
+}
+
+.card-title {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 3rem;
+  color: #565B5E;
+  margin: 20px;
+  text-shadow: 2px 2px #83e7cb;
+}
+
+.card-button {
+  background: #E3C24D;
+  border: none;
+  border-radius: 10px;
+  font-size: 23px;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.card-image {
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+button a {
+  text-decoration: none;
+  color: white;
 }
 
 .divider h2 {
@@ -158,15 +205,17 @@ button a {
   text-align: center;
   font-size: 40px;
   font-weight: 100px;
-  padding: ;
+  padding: 40px;
 }
 
 .second-header {
-  color: #5B7D91;
+  /* color: #5B7D91; */
+  color : #565B5E;
   font-family: "Bebas Neue", sans-serif;
   text-align: center;
-  font-size: 100px;
-  margin: 100px auto 50px auto;
+  font-size: 55px;
+  margin: 0px auto 20px auto;
+  text-shadow: 2px 2px #83e7cb;
 }
 
 .video-grid {
@@ -177,15 +226,54 @@ button a {
 
 .video-element {
   margin: 20px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* margin: 50px; */
+  
+}
+
+.about p {
+  text-align: justify;
+  padding: 1em 2em 1em 2em;
 }
 
 .profilePic {
   border-radius: 50%;
-  width: 25%;
+  width: 400px;
+  margin: 30px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
-@media screen and (max-width: 768px) {
+footer {
+  display: flex;
+  background: #565B5E;
+  /* color: #EAECEF; */
+  color: black;
+  font-size: 12px;
+}
+
+
+/* media queries */
+
+@media screen and (max-width: 700px) {
   .cards {
     flex-direction: column;
   }
+
+  .about p {
+    padding: auto .5em auto .5em;
+  }
 }
+
+/* @media screen and (max-width: 1000px) {
+  .cards {
+    flex: 0 50%;
+  }
+} */

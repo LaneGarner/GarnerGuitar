@@ -6,7 +6,6 @@
   <meta charset="utf-8">
   <link rel="stylesheet" Type="text/css" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 
@@ -18,8 +17,18 @@
   <nav>
     <div class="navbar">
 
+      <a href="index.html">
+        <img src="images/garner-guitar-circle-logo-image-guitar-lessons-austin-online.png" id="thumbnail-logo"
+          alt="Garner Guitar logo">
+      </a>
+
+      <a href="index.html">
+        <h1 id="logo-heading">GarnerGuitar.com</h1>
+      </a>
+
+
       <!-- <a href="courses/index.html">Courses</a> -->
-      <a href="coming-soon.html">Courses</a>
+      <a class="nav-link" class="nav-link" href="coming-soon.html">Courses</a>
 
 
 
@@ -27,21 +36,17 @@
       <a class="nav-link" href="pages/book.html">Book</a>
 
       <div class="dropdown">
-        <button class="dropbtn">Lessons
-          <i class="fa fa-caret-down"></i>
-        </button>
+        <button class="dropbtn">Lessons</button>
         <div class="dropdown-content">
           <a href="http://austintexasguitarlessons.com" target="_blank">ATX Lessons</a>
           <a href="http://myonlineguitarlessons.net" target="_blank">Online Lessons</a>
           <a href="coming-soon.html">Free Lessons</a>
-          <!-- <a class= href="pages/free-lessons.html">Free Lessons</a> -->
+          <a class=href="pages/free-lessons.html">Free Lessons</a>
         </div>
       </div>
 
       <div class="dropdown">
-        <button class="dropbtn">Resources
-          <i class="fa fa-caret-down"></i>
-        </button>
+        <button class="dropbtn">Resources</button>
         <div class="dropdown-content">
           <a href="resources/printables.html" class="submenu">Printables</a>
           <a href="resources/backing-tracks.html" class="submenu">Backing tracks</a>
@@ -80,80 +85,95 @@
 
 <body>
   <div class="divider">
-    <button type="button" id="sign-up"><a href="courses/index.html">Sign up</a></button>
-    <h1 id="logo-heading">GarnerGuitar.com</h1>
 
-    <a href="index.html">
-      <img src="images/garner-guitar-circle-logo-image-guitar-lessons-austin-online.png" id="logo"
-        alt="Garner Guitar logo">
-    </a>
+    <img src="images/garner-guitar-circle-logo-image-guitar-lessons-austin-online.png" id="logo"
+      alt="Garner Guitar logo">
     <h2>Learn guitar.<br> Improve your skills.<br> Take your playing to the next level.</h2>
+    <button type="button" id="sign-up"><a href="courses/index.html">Sign up</a></button>
   </div>
 
   <div class="cards">
     <div class="card">
-      <h2>Courses</h2>
-      <img src="images/course-icon.jpg" alt=“courses”>
-      <p>Highly detailed courses to improve up your playing</p>
-      <button type="button"><a href="courses/index.html">Learn more</a></button>
+      <h2 class="card-title">Courses</h2>
+      <img class="card-image" src="images/course-icon.jpg" alt=“courses”>
+      <p>Improve your playing</p>
+      <button type="button" class="card-button"><a href="courses/index.html">Learn more</a></button>
     </div>
 
-    <div>
+    <div class="card">
       <h2 class="card-title">Online Lessons</h2>
-      <img src="images/zoomLogo.png" alt=“Zoom logo”>
+      <img class="card-image" src="images/zoomLogo.png" alt=“Zoom logo”>
       <p class="card-text">Virtual lessons on Zoom</p>
-      <button type="button"><a href="http://myonlineguitarlessons.net" target="_blank">Learn more</a></button>
+      <button type="button" class="card-button"><a href="http://myonlineguitarlessons.net" target="_blank">Learn
+          more</a></button>
     </div>
 
-    <div>
-      <h2>ATX Lessons</h2>
-      <img src="images/map-of-austin.jpg" alt=“map of austin”>
-      <p>In-home lessons around the greater Austin area</p>
-      <button type="button"><a href="http://austintexasguitarlessons.com" target="_blank">Learn more</a></button>
+    <div class="card">
+      <h2 class="card-title">ATX Lessons</h2>
+      <img class="card-image" src="images/map-of-austin.jpg" alt=“map of austin”>
+      <p>Lessons in Austin, TX</p>
+      <button type="button" class="card-button"><a href="http://austintexasguitarlessons.com" target="_blank">Learn
+          more</a></button>
     </div>
 
 
-    <div>
+    <div class="card">
       <h2 class="card-title">Book</h2>
-      <a href="pages/book.html"><img src="images/Garner-Guitar-Book-Cover.jpg" alt="Garner Guitar Book Cover"></a>
-      <p>Paragraph</p>
-      <button type="button"><a href="pages/book.html" _blank">Learn more</a></button>
+      <a href="pages/book.html"><img class="card-image" src="images/Garner-Guitar-Book-Cover.jpg"
+          alt="Garner Guitar Book Cover"></a>
+      <p>Info about upcoming book</p>
+      <button type="button" class="card-button"><a href="pages/book.html" _blank">Learn more</a></button>
     </div>
   </div>
 
   <h2 class="second-header">Free Video Lessons</h2>
   <div class="video-grid">
     <iframe class="video-element" width="560" height="315" src="https://www.youtube.com/embed/dL5Kc3EQ79k"
-      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <iframe class="video-element" width="560" height="315" src="https://www.youtube.com/embed/4_m1PzagTtQ"
-      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <iframe class="video-element" width="560" height="315" src="https://www.youtube.com/embed/gy92W5Bau9E"
-      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <iframe class="video-element" width="560" height="315" src="https://www.youtube.com/embed/v8wNO73OYFo"
-      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <iframe class="video-element" width="560" height="315" src="https://www.youtube.com/embed/0D0UDSUqQ9I"
-      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <iframe class="video-element" width="560" height="315" src="https://www.youtube.com/embed/WvZGqBRIUoE"
-      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
 
-  <h2>About Me</h2>
-  <a href="http://www.lanegarner.com"><img src="images/lane-garner-guitar-lessons-online-austin-texas.jpg"
-      class="profilePic" alt="Photo of Lane Garner"></a>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda temporibus maiores fugiat saepe laudantium
-    ratione in est possimus officiis nobis unde, consequatur deleniti excepturi. Animi error impedit ipsa veniam
-    distinctio.</p>
+  <div class="about">
+    <h2 class="card-title">About Me</h2>
+    <a href="http://www.lanegarner.com"><img src="images/lane-garner-guitar-lessons-online-austin-texas.jpg"
+        class="profilePic" alt="Photo of Lane Garner"></a>
+    <p><strong>Hi, I'm Lane Garner.</strong> I’ve been teaching guitar lessons for over ten years and have experience
+      with students of
+      all ages and experience levels. I have Masters and Bachelors degrees in Jazz Studies from the University of North
+      Texas. As a performer I have traveled all over the country and world playing various styles ranging from jazz,
+      rock, and pop to classical, country, worship music, and more. I am currently filling my lesson studio here in
+      Austin.
 
+      I offer private guitar lessons to students in Austin, TX wishing to learn guitar or develop their guitar and music
+      skills beyond a beginner level. We will take your playing to the next level by studying music theory, technique,
+      jazz and blues improvisation, gear and tone, reading music, playing styles, and more.
 
-  <h2>Podcast</h2>
+      Whether you just started playing guitar or you’ve played for years there is always something new to learn about
+      music. My primary goal as a teacher is to focus intently on specific aspects of each student's musicianship-
+      technique, harmonic concepts, ear-training, theory, etc while making each lesson fun for the student. It is my
+      goal to improve the student’s playing by the end of each and every lesson. I find it important to teach
+      fundamentals of music as well as any additional material the student is interested in learning. In my 10+ years of
+      teaching guitar I’ve worked with students of all levels and ages 5 to 65. I’ve taught total beginners,
+      intermediate players, college music majors, and even working musicians.</p>
+  </div>
+
+  <!-- <h2>Podcast</h2>
   <p>Paragraph</p>
 
   <h2>Blog</h2>
-  <p>Paragraph</p>
+  <p>Paragraph</p> -->
 
-  <h2>Mailing List</h2>
-  <p>Paragraph</p>
-
+</body>
+<footer>
   <div>
     <p>Social links!</p>
     <p>Courses</p>
@@ -169,9 +189,10 @@
   </div>
 
   <div>
-    <p>&copy; 2020 Garner Guitar</p>
+    <p>&copy; 2020 Lane Garner</p>
   </div>
+</footer>
 
-</body>
+
 
 </html>
