@@ -6,6 +6,9 @@
   <meta charset="utf-8">
   <link rel="stylesheet" Type="text/css" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/8e892fa9ba.js" crossorigin="anonymous"></script>
+
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
 </head>
 
 
@@ -26,48 +29,48 @@
         <h1 id="logo-heading">GarnerGuitar.com</h1>
       </a>
 
+      <div class="dropdown">
+        <button class="dropbtn">Lessons <i class="fas fa-angle-down" data-fa-transform="left-4"></i></i></button>
+        <div class="dropdown-content">
+          <a href="http://austintexasguitarlessons.com" target="_blank">ATX Lessons</a>
+          <a href="http://myonlineguitarlessons.net" target="_blank">Online Lessons</a>
+          <!-- <a href="coming-soon.html">Free Lessons</a> -->
+          <a href="#free-lessons">Free Lessons</a>
+        </div>
+      </div>
+
 
       <!-- <a href="courses/index.html">Courses</a> -->
-      <a class="nav-link" class="nav-link" href="coming-soon.html">Courses</a>
+      <!-- <a class="nav-link" class="nav-link" href="coming-soon.html">Courses</a> -->
+      <a class="nav-link" class="nav-link" href="courses/index.html">Courses</a>
 
 
 
       <!-- <a class="nav-link" href="coming-soon.html">Book</a> -->
       <a class="nav-link" href="pages/book.html">Book</a>
 
-      <div class="dropdown">
-        <button class="dropbtn">Lessons</button>
-        <div class="dropdown-content">
-          <a href="http://austintexasguitarlessons.com" target="_blank">ATX Lessons</a>
-          <a href="http://myonlineguitarlessons.net" target="_blank">Online Lessons</a>
-          <a href="coming-soon.html">Free Lessons</a>
-          <a class=href="pages/free-lessons.html">Free Lessons</a>
-        </div>
-      </div>
+      <a class="nav-link" href="pages/contact.html">Contact</a>
 
       <div class="dropdown">
-        <button class="dropbtn">Resources</button>
+        <button class="dropbtn">Resources <i class="fas fa-angle-down"></i></button>
         <div class="dropdown-content">
           <a href="resources/printables.html" class="submenu">Printables</a>
-          <a href="resources/backing-tracks.html" class="submenu">Backing tracks</a>
-          <a href="resources/sight-reading.html" class="submenu">Sight reading</a>
-          <a href="resources/transcriptions.html" class="submenu">Transcriptions</a>
+          <!-- <a href="resources/backing-tracks.html" class="submenu">Backing tracks</a> -->
+          <!-- <a href="resources/sight-reading.html" class="submenu">Sight reading</a> -->
+          <!-- <a href="resources/transcriptions.html" class="submenu">Transcriptions</a> -->
           <a href="https://www.google.com/search?q=metronome" target="_blank" class="submenu">Metronome</a>
           <a href="resources/tuner.html" class="submenu">Tuner</a>
           <hr>
-          <a href="#">Blog</a></li>
-          <a href="#">Podcast</a></li>
+          <!-- <a href="#">Blog</a></li> -->
+          <!-- <a href="#">Podcast</a></li> -->
           <a href="https://www.youtube.com/c/garnerguitar" target="_blank" class="submenu">YouTube</a>
           <a href="https://www.instagram.com/garnerguitar" target="_blank" class="submenu">Instagram</a>
           <a href="https://LaneGarner.com" target="_blank">Lane Garner Music</a>
-          <a href="https://distrokid.com/hyperfollow/lanegarner/wooden-robots" target="_blank" class="submenu">Wooden
-            Robots</a>
-          <a href="https://fundamentalmusix.com" target="_blank" class="submenu">Fundamental.</a>
+          <!-- <a href="https://distrokid.com/hyperfollow/lanegarner/wooden-robots" target="_blank" class="submenu">Wooden -->
+          <!-- Robots</a> -->
+          <!-- <a href="https://fundamentalmusix.com" target="_blank" class="submenu">Fundamental.</a> -->
         </div>
       </div>
-
-      <!-- 
-      <a href="#">Contact</a> -->
 
 
       <!-- <span>
@@ -89,10 +92,14 @@
     <img src="images/garner-guitar-circle-logo-image-guitar-lessons-austin-online.png" id="logo"
       alt="Garner Guitar logo">
     <h2>Learn guitar.<br> Improve your skills.<br> Take your playing to the next level.</h2>
+    <form>
+      <label for="email">GarnerGuitar Mailing List</label><br>
+      <input type="email" id="email" name="email" placeholder="Please enter email"><br>
+    </form>
     <button type="button" id="sign-up"><a href="courses/index.html">Sign up</a></button>
   </div>
 
-  <div class="cards">
+  <div class="cards" id="lessons">
     <div class="card">
       <h2 class="card-title">Courses</h2>
       <img class="card-image" src="images/course-icon.jpg" alt=“courses”>
@@ -126,7 +133,7 @@
     </div>
   </div>
 
-  <h2 class="second-header">Free Video Lessons</h2>
+  <h2 class="second-header" id="free-lessons">Free Video Lessons</h2>
   <div class="video-grid">
     <iframe class="video-element" width="560" height="315" src="https://www.youtube.com/embed/dL5Kc3EQ79k"
       allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -175,21 +182,29 @@
 </body>
 <footer>
   <div>
-    <p>Social links!</p>
-    <p>Courses</p>
-    <p>Book</p>
-    <p>Lessons</p>
-    <p>Resources</p>
+
+    <div class="social">
+      <a href="https://www.youtube.com/c/garnerguitar" target="_blank"><i class="fab fa-youtube"></i></a>
+      <a href="https://www.instagram.com/garnerguitar/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.facebook.com/GarnerGuitar/" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://lanegarner.com" target="_blank"><i class="fas fa-music"></i></a>
+    </div>
+    <div id="footer-nav">
+      <a href="courses/index.html">Courses</a>
+      <a href="pages/book.html">Book</a>
+      <a href="#lessons">Lessons</a>
+      <a href="">Resources</a>
+    </div>
   </div>
 
-  <div>
+  <!-- <div id="sitemap">
     <p>Sitemap</p>
     <p>Privacy Policy</p>
     <p>Contact</p>
-  </div>
+  </div> -->
 
-  <div>
-    <p>&copy; 2020 Lane Garner</p>
+  <div id="copyright">
+    <p><em>Copyright &copy; 2020 Lane Garner</em></p>
   </div>
 </footer>
 

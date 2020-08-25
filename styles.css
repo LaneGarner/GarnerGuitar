@@ -27,7 +27,7 @@ nav {
 #thumbnail-logo {
   display: flex;
   width: 40px;
-  margin: auto 10px;
+  margin: 10px 20px;
   padding-right: 5px;
 }
 
@@ -45,28 +45,28 @@ nav a {
   text-decoration: none;
 }
 
-.nav-link, .dropbtn {
+.nav-link {
   color: #565B5E;
   text-align: center;
   padding: 10px;
   margin: 0px 20px;
   text-decoration: none;
+  text-align: left;
   font-size: 18px;
   border: none;
   background: #EAECEF;
 }
-/*  
+ 
 .dropbtn {
   color: #565B5E;
   text-align: center;
-  padding: 10px;
+  /* padding: 10px; */
   margin: 0px 20px;
   text-decoration: none;
   font-size: 18px;
   border: none;
-} */
+}
 
-.dropbtn
 
 .dropdown {
   float: left;
@@ -81,7 +81,9 @@ nav a {
   padding: 14px 16px;
   background: inherit;
   font-family: inherit;
-  /* margin: 0; */
+  padding: 14px 16px;
+  font-size: 18px;
+  margin: 0;
 }
 
 .nav-link:hover, .dropdown:hover .dropbtn {
@@ -101,7 +103,7 @@ nav a {
   z-index: 1;
   border-top: 6px solid #83e7cb;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  /* border-radius: 8px; */
+  border-radius: 8px;
 }
 
 .dropdown-content a {
@@ -121,8 +123,6 @@ nav a {
   display: block;
 }
 
-/* copied from W3 above*/
-
 .divider {
   background: url(images/Online-guitar-lessons.jpeg);
   min-height: 500px; 
@@ -135,6 +135,7 @@ nav a {
   flex-direction: column;
   align-items: center;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  border-radius: 4px;
 }
 
 #logo {
@@ -154,7 +155,7 @@ nav a {
 }
 
 p {
-  margin: 20px auto 20px 40px;
+  /* margin: 20px auto 20px 40px; */
   font-size: 18px;
 }
 
@@ -235,7 +236,7 @@ button a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* margin: 50px; */
+  margin: 70px;
   
 }
 
@@ -253,12 +254,47 @@ button a {
 
 footer {
   display: flex;
+  justify-content: space-around;
   background: #565B5E;
   /* color: #EAECEF; */
   color: black;
-  font-size: 12px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
+footer p {
+  font-size: 14px;
+}
+
+.social {
+  font-size: 25px;
+  margin: 20px;
+}
+
+.social i {
+  padding: 20px;
+  color: black;
+}
+
+footer a {
+  padding: 4px;
+  color: black;
+}
+
+#footer-nav {
+  margin: 40px;
+}
+
+#sitemap {
+  margin: 20px;
+}
+
+#copyright {
+  margin-top: 60px;
+}
+
+#footer-nav a {
+  display: block;
+}
 
 /* media queries */
 
