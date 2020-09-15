@@ -11,6 +11,7 @@
 nav {
   position: fixed;
   top: 0;
+  left: 0;
 }
 
 .navbar {
@@ -24,7 +25,7 @@ nav {
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
-#thumbnail-logo {
+.thumbnail-logo {
   display: flex;
   width: 80px;
   margin: 20px;
@@ -32,8 +33,8 @@ nav {
 }
 
 
-#logo-heading {
-  color: #565B5E;
+.logo-heading {
+  color: #333;
   font-family: "Bebas Neue", sans-serif;
   font-size: 50px;
   padding: 20px 25px 20px 0px;
@@ -47,7 +48,7 @@ nav a {
 
 .nav-link {
   color: #565B5E;
-  text-align: center;
+  text-align: left;
   padding: 14px 16px;
   margin: 10px;
   text-decoration: none;
@@ -58,7 +59,7 @@ nav a {
  
 .dropbtn {
   color: #565B5E;
-  text-align: center;
+  text-align: left;
   margin: 0px 20px;
   text-decoration: none;
   font-size: 18px;
@@ -99,9 +100,9 @@ nav a {
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
-  /* border-top: 6px solid #83e7cb; */
+  border-top: 6px solid #83e7cb;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  border-radius: 8px;
+  /* border-radius: 8px; */
 }
 
 .dropdown-content a {
@@ -110,7 +111,7 @@ nav a {
   padding: 12px 16px;
   text-decoration: none;
   display: block;
-  text-align: center;
+  text-align: left;
 }
 
 .dropdown-content a:hover {
@@ -168,11 +169,10 @@ nav a {
   flex-direction: column;
   align-items: center;
   background: #EAECEF;
-  /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
 }
 
 .second-header {
-  color : #565B5E;
+  color : #333;
   font-family: "Bebas Neue", sans-serif;
   text-align: center;
   font-size: 60px;
@@ -231,7 +231,7 @@ p {
 
 .card {
   margin: 2rem;
-  padding: auto 20px;
+  padding: 20px auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -240,13 +240,14 @@ p {
 
 .card-title {
   font-family: "Bebas Neue", sans-serif;
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: #565B5E;
   margin-bottom: 20px;
   /* text-shadow: 2px 2px #83e7cb; */
 }
 
 .card-button {
+  color: white;
   display: block;
   background: #E3C24D;
   border: none;
@@ -258,6 +259,10 @@ p {
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
+.course-div a, .card a {
+  text-decoration: none;
+}
+
 .card-image {
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
@@ -267,6 +272,7 @@ button a {
   text-decoration: none;
   color: white;
 }
+
 
 .divider h2 {
   color: white;
@@ -311,11 +317,13 @@ button a {
 }
 
 footer {
+  width: 100vw;
   display: flex;
-  justify-content: space-around;
-  background: #565B5E;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background: #111;
   /* color: #EAECEF; */
-  color: black;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
@@ -324,35 +332,79 @@ footer p {
 }
 
 .social {
-  font-size: 25px;
-  margin: 20px;
+  width: 100vw;
+  font-size: 1.2em;  
+  background: #565B5E;
+  /* flex-direction: column; */
+  align-items: baseline;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.social-element {
+  padding: 40px;
+}
+
+.social h3 {
+  color: #eee;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 40px;
+  font-weight: 100;
+  text-align: center;
+  /* padding: 20px; */
+  /* margin-top: 100px; */
 }
 
 .social i {
-  padding: 20px;
-  color: black;
+  color: #111;
+  font-size: 2.5em;
+  margin: .5em;
 }
 
 footer a {
   padding: 4px;
-  color: black;
+  color: 565B5E;
+  text-align: center;
+  text-decoration: none;
+  color: #EEE;
 }
 
-#footer-nav {
+.footer-nav {
   margin: 40px;
 }
 
-#sitemap {
+.footer-logo {
+  width: 150px;
   margin: 20px;
 }
 
-#copyright {
-  margin-top: 60px;
+.copyright {
+  color: #565B5E;
+  text-align: center;
+  /* margin-top: 20px; */
 }
 
-#footer-nav a {
+.copyright-text {
+  text-decoration: overline;
+}
+
+.copyright p {
+  padding: 5px;
+}
+
+.footer-nav a {
   display: block;
 }
+
+.footer-element {
+  padding: 40px;
+}
+
+#first-element-margin {
+  margin-top: 150px;
+}
+
 
 /* media queries */
 

@@ -1,0 +1,167 @@
+.logo-heading {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 40px;
+    text-shadow: 2px 2px #83e7cb;
+    align-content: center;
+  }
+
+.navbar-light .navbar-brand {
+    color: #333;
+}
+
+.logo {
+    margin: 10px 20px;
+    width: 40px;
+  }
+
+.navbar {
+    color: #565B5E;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    background: black;
+}
+
+/* nav {
+    background: #EAECEF;
+}*/
+
+/* header {
+    position: fixed;
+    width: 100vw;
+}  */
+
+body {
+    margin: 90px auto 20px 0px;
+    width: 98vw;
+}
+
+/* .col-md-2 {
+    height: 100vh;
+    overflow-y: auto;
+    position: fixed;
+ } */
+
+.col-md-10 {
+    /* padding: auto 40px 4px 4px; */
+    text-align: justify;
+    /* height: 100vh;
+    overflow-y: auto; */
+}
+
+.mb-4 {
+    padding-left: .5em;
+    font-size: 23px;
+    margin: 0px;
+}
+
+.image {
+    max-width: 400px;
+    margin-bottom: .5em;
+    border-radius: 3px;
+}
+
+.small-image {
+    max-width: 250px;
+    margin-bottom: .5em;
+    border-radius: 3px;
+}
+
+.large-image {
+    max-width: 700px;
+    margin: .5em;
+    border-radius: 3px;
+}
+
+.xl-image {
+    max-width: 1000px;
+    margin-bottom: .75em;
+    border-radius: 3px;
+}
+
+.tiny-image {
+    max-width: 100px;
+    margin-bottom: .75em;
+    border-radius: 3px;
+}
+    
+.wrap {
+    float: left;
+    margin: auto 10px 10px auto;
+    /* max-width: 400px */
+}
+
+.shadow {
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+h1 {
+    margin-bottom: .25em;
+}
+
+h2, h3, h4, h5, h6, p {
+    margin: 1em auto;
+}
+
+.song-input {
+    margin: 20px;
+    width: 60%;
+}
+
+iframe {
+    padding: 20px auto;
+}
+
+.two-column-list {
+    display: flex;
+}
+
+.course-navagation {
+    margin-top: 50px;
+    font-size: 15px;
+    padding-right: 20px;
+    font-style: italic;
+    display: inline-block;
+    color: #565B5E;
+}
+
+.course-nav-arrow {
+    padding-left: 10px;
+    color: #565B5E;
+    font-style: italic;
+    font-size: 15px;
+}
+
+
+.first-row, .third-row {
+    letter-spacing: 2em;
+    font-size: 30px;
+    text-align: center;
+}
+
+.second-row {
+    font-size: 20px;
+    margin: 8px;
+    color: white;
+    background: #565B5E;
+}
+
+.label-row {
+    font-style: italic;
+}
+
+.right-align-table {
+    text-align: right;
+}
+
+.next-course a, .tip {
+    color: #565B5E;
+}
+
+#ag-fence {
+    margin-top: 40px;
+}
+
+.p-btm-mrgn {
+    margin-bottom: 40px;
+}
