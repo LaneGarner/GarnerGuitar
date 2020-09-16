@@ -189,7 +189,7 @@ nav a {
   border-radius: 4px;
 }
 
-#email {
+#email, #email-name {
   margin-top: 15px;
   width: 40%;
   border: none;
@@ -251,15 +251,15 @@ p {
   display: block;
   background: #E3C24D;
   border: none;
-  border-radius: 10px;
-  font-size: 23px;
+  border-radius: 2rem;
+  font-size: 20px;
   text-align: center;
-  padding: 10px;
+  padding: 15px;
   margin: 30px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
-.course-div a, .card a {
+.course-div a, .card a, .print-card a {
   text-decoration: none;
 }
 
@@ -401,8 +401,38 @@ footer a {
   padding: 40px;
 }
 
-#first-element-margin {
+.first-element-margin {
   margin-top: 150px;
+}
+
+.print-card {
+  display: flex;
+  flex-direction: column;
+  border: solid grey 1px;
+  border-radius: 4px;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.print-card-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.center {
+  text-align: center;
+}
+
+.margin-bottom {
+  margin-bottom: 40px;
+}
+
+input[type="email"] {
+  font-size: 20px;
+  text-align: center;
 }
 
 
