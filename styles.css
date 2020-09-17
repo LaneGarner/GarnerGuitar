@@ -435,25 +435,25 @@ input[type="email"] {
   text-align: center;
 }
 
-.logo-heading {
+/* .logo-heading {
   color: #565B5E;
   font-family: "Bebas Neue", sans-serif;
   font-size: 40px;
   text-shadow: 2px 2px #83e7cb;
   align-content: center;
-}
+} */
 
-.logo {
+/* .logo {
   margin: 10px 20px;
   width: 40px;
-}
+} */
 
-nav {
+/* nav {
   color: #565B5E;
   width: 100vw;
-}
+} */
 
-body {
+.course-body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
