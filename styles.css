@@ -98,7 +98,6 @@ nav a {
   position: absolute;
   background-color: #565B5EE9;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
   border-top: 6px solid #83e7cb;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -123,7 +122,7 @@ nav a {
 }
 
 .divider {
-  background: url(images/online-guitar-lessons.jpeg);
+  background: url(/images/online-guitar-lessons.jpeg);
   min-height: 500px; 
   background-attachment: fixed;
   background-position: center;
@@ -189,9 +188,9 @@ nav a {
   border-radius: 4px;
 }
 
-#email, #email-name {
+.email{
   margin-top: 15px;
-  width: 40%;
+  width: 100%;
   border: none;
   height: 3rem;
   border-radius: 4px;
@@ -256,6 +255,7 @@ p {
   text-align: center;
   padding: 15px;
   margin: 30px;
+  width: fit;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
