@@ -1,112 +1,275 @@
-<h1>Functional harmony, Roman numerals, Nashville numbers, and common chord progressions</h1>
-<h2>Functional harmony</h2>
-<p>Functional harmony describes the relationship of each chord to the key center. Stacking thirds from each degree of
-    the major scale creates seven chords within a given key. The key will determine whether each interval is a major or
-    minor third. Analyzing these patterns will tell you whether you have a major, minor, or diminished chord. Let’s look
-    at the key of C major: </p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8e892fa9ba.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../bootstrap-styles.css">  
+    <title>Functional harmony, Roman numerals, Nashville numbers, and common chord progressions</title>
+</head>
+<header>
+    <nav class="navbar navbar-light bg-light sticky-top">
+    <div>
+        <a class="navbar-brand logo-heading" href="../../../index.html">
+            <img class="d-inline-block align-top logo" src="../../../images/garner-guitar-circle-logo-image-guitar-lessons-austin-online.png" alt="Garner Guitar Logo">GarnerGuitar.com
+        </a>
+    </div>
+    <!-- <a id="logo-heading" href="../index.html">GarnerGuitar.com</a> -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="../../index.html">Courses</a></li>
+            <li><a class="nav-link" href="../../../book.html">Method Book</a></li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"aria-haspopup="true" aria-expanded="false">Lessons</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="http://myonlineguitarlessons.net" target="_blank">Online Lessons</a>
+                    <a class="dropdown-item" href="http://austintexasguitarlessons.com" target="_blank">ATX Lessons</a>
+                    <a class="dropdown-item" href="../../../index.html#free-lessons">Free Video Lessons</a>
+                </div>  
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Resources</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="/resources/printables.html" target="blank">Printables</a>
+                    <a class="dropdown-item" href="/resources/apps-for-musicians.html" target="blank">Apps for musicians</a>
+                    <a class="dropdown-item" href="https://www.google.com/search?q=metronome" target="_blank">Metronome</a>
+                    <a class="dropdown-item" href="/resources/tuner.html" target="blank">Tuner</a>
+                    <!-- <a class="dropdown-item" href="#">Transcriptions</a> -->
+                    <!-- <a class="dropdown-item" href="#">Sight reading</a> -->
+                </div>
+            </li>
+        </ul>
+        <!-- <span class="navbar-text">Sign up | Login </span> -->
+    </div>
+    </nav>
+</header>
+<body>
+    <div class="row mt-sm4 mt-md-0">
+        <div class="col-sm-12 col-md-2">
+            <h3 class="course-head">Technique, Reading & Theory</h3>
+            <a href="building-triads.html" class="course-nav-arrow"><i class="fas fa-chevron-circle-left"></i> Back</a>
+            <!-- <a href="#" class="course-nav-arrow">Next <i class="fas fa-chevron-circle-right"></i></a> -->
+            <hr>
+            <ul class="nav flex-column nav-pills">
+            <li class="nav-item">
+                <a class="nav-link" href="guitar-technique-sight-reading-music-theory-garner-guitar-beginning-guitar-course-2.html">Introduction</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="finger-combinations.html">Finger combination exercise</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="string-crossing.html">String crossing exercise</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="pull-offs-hammer-ons.html">Pull-offs & hammer-ons</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="subdivision-studies.html">Subdivision studies</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="upstroke-exercise.html">Upstroke exercise</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="spider-exercises.html">Spider exercises</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="rhythmic-hierarchy.html">The rhythmic heirarchy exercise</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="scales.html">Scales</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="standard-notation-intro.html">Intro to standard notation</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="notes-on-staff.html">Notes on the staff</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="open-strings.html">Open strings</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="first-string.html">First string</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="second-string.html">Second string</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="third-string.html">Third string</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="fourth-string.html">Fourth string</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="fifth-string.html">Fifth string</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="sixth-string.html">Sixth string</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="tab-and-standard-notation.html">Tab and standard notation together</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="music-theory.html">Music theory</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="guitar-geography.html">Guitar geography</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="chromatic-scale.html">The chromatic scale</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="building-major-scales.html">Building major scales</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="circle-4ths-5ths.html">Circle of 4ths/5ths & key signatures</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="intervals.html">Intervals</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="ear-training-intro.html">Intro to ear training</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="building-triads.html">Building triads</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="functional-roman-nashville-common.html">Functional harmony, Roman numerals, Nashville numbers & common chord progressions</a>
+            </li>
 
-<h2>Roman numerals & Nashville numbers</h2>
-<p>There are two common ways to notate chord function. The traditional (i.e. classical) method is to use Roman numerals:
-    uppercase for major and lowercase for minor. Another common method is the Nashville Number System. This system uses
-    Arabic numerals and chord symbols in place of Roman numerals but essentially works in the same way. These systems
-    make it easier to learn songs or teach a chord progression to a fellow musician. </p>
+            <hr>
+            <li class="nav-item next-course">
+                <a class="nav-link" href="../beginner-intermediate-course-3/blues-caged-pentatonics-garner-guitar-beginning-guitar-course-3.html"><i>Next Course: 3. Blues, CAGED, and Pentatonics</i></a>
+            </li>
+            <hr>
+            <li class="nav-item next-course">
+                <a class="nav-link" href="../beginner-intermediate-course-1/free-guitar-basics-course-garner-guitar-beginning-guitar-course-1.html"><i>Previous Course: 1. Free Guitar Basics Course</i></a>
+            </li>
 
-<h2>Common chord progressions</h2>
-<p>Most popular music uses the same chord progressions, or patterns, over and over in different keys. Practicing 1, 4,
-    5, and 6m chords in common guitar keys will help you advance as a guitarist and learn new songs quickly. Use the
-    chart on the previous page for help finding these chords in some common guitar keys.</p>
+        </ul>
+    </div>
+    <div class="col-sm-12 col-md-10">
 
-<h3>Common guitar keys:<br>
-    CAGED</h3>
-<p>After learning chord progressions in these common keys, we can transpose them to less common keys with barre chords
-    or even with a capo.</p>
+        <h1>Functional harmony, Roman numerals, Nashville numbers, and common chord progressions</h1>
+        <h2>Functional harmony</h2>
+        <p>Functional harmony describes the relationship of each chord to the key center. Stacking thirds from each degree of the major scale creates seven chords within a given key. The key will determine whether each interval is a major or minor third. Analyzing these patterns will tell you whether you have a major, minor, or diminished chord. Let’s look at the key of C major: </p>
+        
+        <h2>Roman numerals & Nashville numbers</h2>
+        <p>There are two common ways to notate chord function. The traditional (i.e. classical) method is to use Roman numerals: uppercase for major and lowercase for minor. Another common method is the Nashville Number System. This system uses Arabic numerals and chord symbols in place of Roman numerals but essentially works in the same way. These systems make it easier to learn songs or teach a chord progression to a fellow musician. </p>
+        
+        <h2>Common chord progressions</h2>
+        <p>Most popular music uses the same chord progressions, or patterns, over and over in different keys. Practicing 1, 4, 5, and 6m chords in common guitar keys will help you advance as a guitarist and learn new songs quickly. Use the chart on the previous page for help finding these chords in some common guitar keys.</p>
+        
+        <h3>Common guitar keys:<br>CAGED</h3>
+        <p>After learning chord progressions in these common keys, we can transpose them to less common keys with barre chords or even with a capo.</p>
+        
+        <p>These popular songs use 1, 4, 5, and 6m chords in different orders and combinations. This list is a starting point as these progressions are used in many styles of music. How many of these songs are you familiar with?
+        </p>
+        
+        <h3>1 6m 4 5</h3>
+        <ul>
+            <li>“Stand by me” Benny King (A)</li>
+            <li>“I Will Always Love You” Whitney Houston (A) & Dolly Parton (Ab) </li>
+            <li>“Hallelujah” Leonard Cohen & Jeff Buckley (C) (verse: 1 6 1 6 4 5 1 5) </li>
+            <li>“Last Kiss” Pearl Jam (G)</li>
+            <li>“Purple Rain” Prince (Bb) (verse: 1 6 5 4)</li>
+            <li>“Total Eclipse of the Heart” Bonnie Tyler (chorus) (Ab)</li>
+            <li>“No Surprises” Radiohead (F) (1 6 4 5 4)</li>
+            <li>“Happiness is a Warm Gun” The Beatles (chorus) (C)</li>
+            <li>“Unchained Melody” Righteous Brothers (C)</li>
+            <li>“Earth Angel” The Penguins (chorus) (Ab)</li>
+            <li>“In the Aeroplane Over the Sea” Neutral Milk Hotel (G)</li>
+        </ul>
+        
+        <h3>1 4 5</h3>
+        <ul>
+            <li>“Donna” Ritchie Valens (F)</li>
+            <li>“Mr. Big Stuff” Jean Knight (Eb)</li>
+            <li>“I Love Rock and Roll” Joan Jett and the Black Hearts (chorus) (E) </li>
+            <li>“Here Comes the Sun” The Beatles (verse) (A)</li>
+        </ul>
+        
+        <h3>1 5 6m 4</h3>
+        <ul>
+            <li>“Let it Be” Paul McCartney (C) (1 5 6 4, 1 5 4 1) </li>
+            <li>“I’m Yours” Jason Mraz (B)</li>
+            <li>“Hey Soul Sister” Train (E)</li>
+            <li>“Under the Bridge” Red Hot Chili Peppers (E) </li>
+            <li>“When I Come Around” Green Day (F#)</li>
+            <li>“Don’t Stop Believin’” Journey (E) (1 5 6 4, 1 5 3 4)</li>
+        </ul>
+        
+        <h3>1 5 6m 4 (continued...)</h3>
+        <ul>
+            <li>“With Or Without You” U2 (D)</li>
+            <li>“No Woman No Cry” Bob Marley (C#) (chorus: 1 5 6 4, 1 4 1 5) </li>
+            <li>“Taylor” Jack Johnson (C)</li>
+            <li>“Take on Me” a-ha (C)</li>
+            <li>“What’s My Age Again?” Blink 182 (chorus) (Gb/F#) </li>
+            <li>“Someone like You” Adele (Chorus) (A)</li>
+            <li>“Glycerine” Bush (F) (Verse)</li>
+            <li>“Man in the Mirror” Michael Jackson (G) (verse: 1 5/7 6 4)</li>
+        </ul>
+        
+        <h3>6m 4 1 5</h3>
+        <ul>
+            <li>“One of Us” Joan Osborne (verse/chorus) (A) </li>
+            <li>“Complicated” Avril Lavigne (chorus) (F) </li>
+            <li>“Poker Face” Lady Gaga (B)</li>
+            <li>“Africa” Toto (Chorus) (A)</li>
+            <li>“Bullet with Butterfly Wings” The Smashing Pumpkins (chorus) (Db) </li>
+            <li>“Holiday” Green Day (G)</li>
+            <li>“It’s My Life” Bon Jovi (chorus) (Eb)</li>
+        </ul>
+        
+        <h3>6m 5 4 5</h3>
+        <ul>
+            <li>“All along the Watchtower” Bob Dylan (E) Jimi Hendrix (Eb) </li>
+            <li>“Rolling in the Deep” Adele (chorus) (Eb)</li>
+            <li>“My Heart Will Go On” Celine Dion (E)</li>
+            <li>“Sultans of Swing” Dire Straits (instrumental) (F) </li>
+            <li>“Somebody That I Used to Know” Gotye (chorus) (F) </li>
+            <li>“Smooth Criminal” Michael Jackson (chorus) (C)</li>
+        </ul>
+        
+        <h3>1 4 1 5 </h3>
+        <ul>
+            <li>“Brown-Eyed Girl” Van Morrison (verse) (G)</li>
+            <li>“The Lion Sleeps Tonight” The Tokens/Lion King (F) </li>
+            <li>“Why Don’t You Get a Job” The Offspring (F) </li>
+            <li>“Another Saturday Night” Sam Cooke (A)</li>
+        </ul>
+        
+        <h3>1 4 5 4</h3>
+        <ul>
+            <li>“Wild Thing” The Trogs (A)</li>
+            <li>“Louie Louie” The Kingsmen (Ab)</li>
+            <li>“Joker” The Steve Miller Band (F)</li>
+            <li>“Walking on Sunshine” Katrina and the Waves (Bb) </li>
+            <li>“Hang on Sloopy” The McCoys (G)</li>
+            <li>“Summer Nights” Grease (D)</li>
+            <li>“La Bamba” Ritchie Valens (C)</li>
+            <li>“Dancing With Myself” Generation X/Billy Idol (E)</li>
+        </ul>
+        <a href="building-triads.html" class="course-navagation"> 
+            <i class="fas fa-chevron-circle-left"></i>
+            <strong>Back:</strong> Building triads
+        </a>
 
-<p>These popular songs use 1, 4, 5, and 6m chords in different orders and combinations. This list is a starting point as
-    these progressions are used in many styles of music. How many of these songs are you familiar with?
-</p>
+        <a href="../beginner-intermediate-course-3/blues-caged-pentatonics-garner-guitar-beginning-guitar-course-3.html" class="course-navagation">
+            <strong>Next:</strong> Garner Guitar Beginning to Intermediate Guitar Course 3: Blues, CAGED & Pentatonics 
+            <i class="fas fa-chevron-circle-right"></i>
+        </a>
 
-<h3>1 6m 4 5</h3>
-<ul>
-    <li>“Stand by me” Benny King (A)</li>
-    <li>“I Will Always Love You” Whitney Houston (A) & Dolly Parton (Ab) </li>
-    <li>“Hallelujah” Leonard Cohen & Jeff Buckley (C) (verse: 1 6 1 6 4 5 1 5) </li>
-    <li>“Last Kiss” Pearl Jam (G)</li>
-    <li>“Purple Rain” Prince (Bb) (verse: 1 6 5 4)</li>
-    <li>“Total Eclipse of the Heart” Bonnie Tyler (chorus) (Ab)</li>
-    <li>“No Surprises” Radiohead (F) (1 6 4 5 4)</li>
-    <li>“Happiness is a Warm Gun” The Beatles (chorus) (C)</li>
-    <li>“Unchained Melody” Righteous Brothers (C)</li>
-    <li>“Earth Angel” The Penguins (chorus) (Ab)</li>
-    <li>“In the Aeroplane Over the Sea” Neutral Milk Hotel (G)</li>
-</ul>
 
-<h3>1 4 5</h3>
-<ul>
-    <li>“Donna” Ritchie Valens (F)</li>
-    <li>“Mr. Big Stuff” Jean Knight (Eb)</li>
-    <li>“I Love Rock and Roll” Joan Jett and the Black Hearts (chorus) (E) </li>
-    <li>“Here Comes the Sun” The Beatles (verse) (A)</li>
-</ul>
+        <!-- </div> -->
+    </div>
 
-<h3>1 5 6m 4</h3>
-<ul>
-    <li>“Let it Be” Paul McCartney (C) (1 5 6 4, 1 5 4 1) </li>
-    <li>“I’m Yours” Jason Mraz (B)</li>
-    <li>“Hey Soul Sister” Train (E)</li>
-    <li>“Under the Bridge” Red Hot Chili Peppers (E) </li>
-    <li>“When I Come Around” Green Day (F#)</li>
-    <li>“Don’t Stop Believin’” Journey (E) (1 5 6 4, 1 5 3 4)</li>
-</ul>
-
-<h3>1 5 6m 4 (continued...)</h3>
-<ul>
-    <li>“With Or Without You” U2 (D)</li>
-    <li>“No Woman No Cry” Bob Marley (C#) (chorus: 1 5 6 4, 1 4 1 5) </li>
-    <li>“Taylor” Jack Johnson (C)</li>
-    <li>“Take on Me” a-ha (C)</li>
-    <li>“What’s My Age Again?” Blink 182 (chorus) (Gb/F#) </li>
-    <li>“Someone like You” Adele (Chorus) (A)</li>
-    <li>“Glycerine” Bush (F) (Verse)</li>
-    <li>“Man in the Mirror” Michael Jackson (G) (verse: 1 5/7 6 4)</li>
-</ul>
-
-<h3>6m 4 1 5</h3>
-<ul>
-    <li>“One of Us” Joan Osborne (verse/chorus) (A) </li>
-    <li>“Complicated” Avril Lavigne (chorus) (F) </li>
-    <li>“Poker Face” Lady Gaga (B)</li>
-    <li>“Africa” Toto (Chorus) (A)</li>
-    <li>“Bullet with Butterfly Wings” The Smashing Pumpkins (chorus) (Db) </li>
-    <li>“Holiday” Green Day (G)</li>
-    <li>“It’s My Life” Bon Jovi (chorus) (Eb)</li>
-</ul>
-
-<h3>6m 5 4 5</h3>
-<ul>
-    <li>“All along the Watchtower” Bob Dylan (E) Jimi Hendrix (Eb) </li>
-    <li>“Rolling in the Deep” Adele (chorus) (Eb)</li>
-    <li>“My Heart Will Go On” Celine Dion (E)</li>
-    <li>“Sultans of Swing” Dire Straits (instrumental) (F) </li>
-    <li>“Somebody That I Used to Know” Gotye (chorus) (F) </li>
-    <li>“Smooth Criminal” Michael Jackson (chorus) (C)</li>
-</ul>
-
-<h3>1 4 1 5 </h3>
-<ul>
-    <li>“Brown-Eyed Girl” Van Morrison (verse) (G)</li>
-    <li>“The Lion Sleeps Tonight” The Tokens/Lion King (F) </li>
-    <li>“Why Don’t You Get a Job” The Offspring (F) </li>
-    <li>“Another Saturday Night” Sam Cooke (A)</li>
-</ul>
-
-<h3>1 4 5 4</h3>
-<ul>
-    <li>“Wild Thing” The Trogs (A)</li>
-    <li>“Louie Louie” The Kingsmen (Ab)</li>
-    <li>“Joker” The Steve Miller Band (F)</li>
-    <li>“Walking on Sunshine” Katrina and the Waves (Bb) </li>
-    <li>“Hang on Sloopy” The McCoys (G)</li>
-    <li>“Summer Nights” Grease (D)</li>
-    <li>“La Bamba” Ritchie Valens (C)</li>
-    <li>“Dancing With Myself” Generation X/Billy Idol (E)</li>
-</ul>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
