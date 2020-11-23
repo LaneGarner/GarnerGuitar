@@ -165,3 +165,18 @@ iframe {
 .p-btm-mrgn {
     margin-bottom: 40px;
 }
+
+p {
+    margin-right: 40px;
+}
+
+.hand-position {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    /* flex-direction: column; */
+}
+
+.hand-position img {
+    margin: 30px;
+}

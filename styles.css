@@ -23,6 +23,11 @@ nav {
   background: #EAECEF;
   margin-bottom: 0px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  /* z-index: 100; */
+}
+
+header {
+  z-index: 100;
 }
 
 .thumbnail-logo {
@@ -40,6 +45,11 @@ nav {
   padding: 20px 25px 20px 0px;
   margin-top: 5px;
   text-shadow: 2px 2px #83e7cb;
+}
+
+.logo-heading:hover {
+  transform: translateY(-2px);
+  transition-duration: 100ms;
 }
 
 nav a {
@@ -85,13 +95,18 @@ nav a {
   margin: auto 10px;
 }
 
-.nav-link:hover, .dropdown:hover .dropbtn {
+.nav-link:hover, .dropdown:hover .dropbtn, .nav-link-active{
   background-color: #83e7cb;
-  color: white; 
+  color: #333; 
   border-radius: 5px;
+  transition-duration: 100ms;
   /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
   /* border-bottom: 20px solid #83e7cb; */
 }
+
+/* .nav-link-active {
+  color: white;
+} */
 
 .dropdown-content {
   display: none;
@@ -142,6 +157,11 @@ nav a {
   border-radius: 100%;
 }
 
+#email-image:hover {
+  width: 310px;
+  transition-duration: 1s; 
+}
+
 .tagline-bckgrnd:nth-of-type(1) {
   margin-top: 250px;
 }
@@ -188,8 +208,8 @@ nav a {
   border-radius: 4px;
 }
 
-.email{
-  margin-top: 15px;
+.email {
+  margin: 15px auto;
   width: 100%;
   border: none;
   height: 3rem;
@@ -201,7 +221,7 @@ nav a {
   /* color: #565B5E; */
   /* color: #FFFFFF44; */
   opacity: 1;
-  text-align: center;
+  /* text-align: center; */
 }
 
 #sign-up {
@@ -237,6 +257,11 @@ p {
   flex-direction: column;
 }
 
+.card:hover {
+  transform: translateY(-4px);
+  transition-duration: 300ms; 
+}
+
 .card-title {
   font-family: "Bebas Neue", sans-serif;
   font-size: 2.5rem;
@@ -256,7 +281,14 @@ p {
   padding: 15px;
   margin: 30px;
   width: fit;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+}
+
+.card-button:hover {
+  background-color:  #e4c34b;
+  color: #333;
+  transition-duration: 100ms; 
+  /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4); */
 }
 
 .course-div a, .card a, .print-card a {
@@ -265,6 +297,10 @@ p {
 
 .card-image {
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.card-image:hover {
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
 }
 
 
@@ -316,6 +352,12 @@ button a {
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
+.profilePic:hover {
+  transition-duration: 1s; 
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+  width: 410px;
+}
+
 footer {
   width: 100vw;
   display: flex;
@@ -362,6 +404,16 @@ footer p {
   margin: .5em;
 }
 
+.social i:hover {
+  text-shadow: 2px 2px #83e7cb;
+  transition-duration: 100ms;
+}
+
+#follow:hover {
+  color: #111;
+  transition-duration: 500ms;
+}
+
 footer a {
   padding: 4px;
   color: 565B5E;
@@ -372,6 +424,15 @@ footer a {
 
 .footer-nav {
   margin: 40px;
+}
+
+.footer-nav a:hover {
+  font-size: 16.5px;
+}
+
+#mailto:hover {
+  font-size: 16.2px;
+  transition-duration: 100ms;
 }
 
 .footer-logo {
@@ -430,9 +491,35 @@ footer a {
   margin-bottom: 40px;
 }
 
-input[type="email"] {
+input[type="email"], input[type="text"] {
   font-size: 20px;
+  text-align: left;
+  padding: 5px;
+}
+
+.email-signup-button {
+  border-radius: 30px;
+  border: 5px solid #83e7cb;
+  font-size: 20px;
+  padding: 10px;
+  margin: 20px;
   text-align: center;
+  transition-duration: 100ms; 
+  cursor: pointer;
+}
+
+.email-signup-button:hover {
+  background: #83e7cb;
+
+}
+
+.mce_inline_error {
+  color: tomato;
+  padding-bottom: 10px;
+}
+
+.mc-field-group {
+  margin-top: 20px;
 }
 
 /* .logo-heading {
@@ -528,6 +615,11 @@ h2 {
   min-width: 400px;
   border-radius: 4px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.course-div:hover {
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+  transform: translateY(-4px);
 }
 
 .bullets {

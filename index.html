@@ -79,17 +79,40 @@
       <a href="book.html"><div class="card-button">Learn more</div></a>
     </div>
   </div>
+
+
   <div class="email-sign-up">
     <h2 class="second-header">Garner Guitar Email List</h2>
     <img src="images/black-strat.png" id="email-image" alt="Garner Guitar logo">
     <p id="sign-up-paragraph">Sign up to be notified about updates to online courses, free lessons, and more!</p>
-    <form action="https://garnerguitar.us11.list-manage.com/subscribe/post?u=8eea35f01b4e0a5ac32bb87f1&amp;id=98ce0a7abf" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-      <label for="mce-FNAME">Name</label>
-      <input type="text" value="" name="FNAME" class="email" id="mce-FNAME" required>
-      <label for="mce-EMAIL">Email</label>
-      <input type="email" value="" name="EMAIL" id="mce-EMAIL" class="email" required>
-      <input type="submit" value="Subscribe" name="subscribe" id="sign-up" class="button"></div>
-    </form>
+
+
+  <!-- Begin Mailchimp Signup Form -->
+  <form action="https://garnerguitar.us11.list-manage.com/subscribe/post?u=8eea35f01b4e0a5ac32bb87f1&amp;id=98ce0a7abf" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+      <div id="mc_embed_signup_scroll">
+        <div class="mc-field-group">
+          <label for="mce-FNAME">Name  <span class="asterisk">*</span></label>
+          <input type="text" value="" name="FNAME" class="required email" id="mce-FNAME" placeholder="Your Name">
+        </div>
+        <div class="mc-field-group">
+          <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span></label>
+          <input type="email" value="" name="EMAIL" class="email required" id="mce-EMAIL" placeholder="address@example.com">
+        </div>
+        <div id="mce-responses" class="clear">
+          <div class="response" id="mce-error-response" style="display:none"></div>
+          <div class="response" id="mce-success-response" style="display:none"></div>
+        </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+        <!-- <div class="indicates-required"><span class="asterisk">*</span> indicates required</div> -->
+        <!-- <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_8eea35f01b4e0a5ac32bb87f1_98ce0a7abf" tabindex="-1" value=""></div> -->
+        <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button email-signup-button"></div>
+      </div>
+  </form>
+  <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+  <!--End mc_embed_signup-->
+
+
+
+
   </div>
   <div>
     <h2 class="second-header" id="free-lessons">Free Video Lessons<br></i></h2>
@@ -107,10 +130,10 @@
     <a href="http://www.lanegarner.com"><img src="images/lane-garner-guitar-lessons-online-austin-texas.jpg"class="profilePic" alt="Photo of Lane Garner"></a>
     <p><strong>Hi, I'm Lane Garner.</strong> I’ve been teaching guitar lessons for over ten years and have experience with students of all ages and experience levels. I offer private guitar lessons to students in Austin, TX wishing to learn guitar or develop their guitar and music skills beyond a beginner level. We will take your playing to the next level by studying music theory, technique, jazz and blues improvisation, gear and tone, reading music, playing styles, and more.</p>
     <p>Whether you just started playing guitar or you’ve played for years there is always something new to learn aboutmusic. My primary goal as a teacher is to focus intently on specific aspects of each student's musicianship-technique, harmonic concepts, ear-training, theory, etc while making each lesson fun for the student. It is mygoal to improve the student’s playing by the end of each and every lesson. I find it important to teachfundamentals of music as well as any additional material the student is interested in learning. In my 10+ years ofteaching guitar I’ve worked with students of all levels and ages 5 to 65. I’ve taught total beginners,intermediate players, college music majors, and even working musicians.</p>
-    <p>I have Masters and Bachelors degrees in Jazz Studies from the University of NorthTexas. As a performer I have traveled all over the country and world playing various styles ranging from jazz,rock, and pop to classical, country, worship music, and more. I am currently filling my lesson studio here inAustin.</p>
+    <p>I have Masters and Bachelors degrees in Jazz Studies from the University of NorthTexas. As a performer I have traveled all over the country and world playing various styles ranging from jazz,rock, and pop to classical, country, worship music, and more. I am currently filling my lesson studio here in Austin.</p>
   </div>
 <div class="social">
-    <h3 class="social-element">Follow Me </h3>
+    <h3 class="social-element" id="follow">Follow Me </h3>
     <a class="social-element" href="https://www.youtube.com/c/garnerguitar" target="_blank"><i class="fab fa-youtube"></i></a>
     <a class="social-element" href="https://www.instagram.com/garnerguitar/" target="_blank"><i class="fab fa-instagram"></i></a>
     <a class="social-element" href="https://www.facebook.com/GarnerGuitar/" target="_blank"><i class="fab fa-facebook"></i></a>
@@ -130,7 +153,7 @@
     <a href="#">Contact</a>
   </div>
   <div class="copyright footer-element">
-    <a href="mailto:Lane@GarnerGuitar.com"><i class="far fa-envelope"></i> Lane@GarnerGuitar.com</a>
+    <a id="mailto" href="mailto:Lane@GarnerGuitar.com"><i class="far fa-envelope"></i> Lane@GarnerGuitar.com</a>
     <p class="copyright-text"><em>Copyright &copy; 2020 Lane Garner</em></p>
   </div>
 </footer>
