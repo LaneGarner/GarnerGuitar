@@ -23,11 +23,11 @@ nav {
   background: #EAECEF;
   margin-bottom: 0px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  /* z-index: 100; */
+  /* z-index: 2; */
 }
 
-header {
-  z-index: 100;
+nav {
+  z-index: 3;
 }
 
 .thumbnail-logo {
@@ -41,7 +41,7 @@ header {
 .logo-heading {
   color: #333;
   font-family: "Bebas Neue", sans-serif;
-  font-size: 50px;
+  font-size: 4em;
   padding: 20px 25px 20px 0px;
   margin-top: 5px;
   text-shadow: 2px 2px #83e7cb;
@@ -49,6 +49,8 @@ header {
 
 .logo-heading:hover {
   transform: translateY(-2px);
+  color: #83e7cb;
+  text-shadow: 2px 2px #333;
   transition-duration: 100ms;
 }
 
@@ -95,13 +97,17 @@ nav a {
   margin: auto 10px;
 }
 
-.nav-link:hover, .dropdown:hover .dropbtn, .nav-link-active{
+.nav-link:hover, .dropdown:hover .dropbtn {
   background-color: #83e7cb;
   color: #333; 
   border-radius: 5px;
   transition-duration: 100ms;
   /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
   /* border-bottom: 20px solid #83e7cb; */
+}
+
+.nav-link-active {
+  text-shadow: 2px 2px #83e7cb;
 }
 
 /* .nav-link-active {
@@ -162,6 +168,10 @@ nav a {
   transition-duration: 1s; 
 }
 
+.tagline-bckgrnd {
+  z-index: -1;
+}
+
 .tagline-bckgrnd:nth-of-type(1) {
   margin-top: 250px;
 }
@@ -190,25 +200,45 @@ nav a {
   background: #EAECEF;
 }
 
+#mc_embed_signup_scroll {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#mc_embed_signup_scroll label {
+  color: #333;
+  font-weight: 600;
+}
+
+
 .second-header {
   color : #333;
   font-family: "Bebas Neue", sans-serif;
   text-align: center;
-  font-size: 60px;
+  font-size: 3em;
   margin: 50px auto 20px;
   padding: 20px;
   text-shadow: 2px 2px #83e7cb;
 }
 
+.second-header:hover {
+  transform: translateY(-2px);
+  color: #83e7cb;
+  text-shadow: 2px 2px #333;
+  transition-duration: 100ms;
+}
+
 #sign-up-paragraph {
   margin: 20px;
   padding: 10px;
+  width: 30%;
   color: white;
   background: #000000BB;
   border-radius: 4px;
 }
 
-.email {
+.required {
   margin: 15px auto;
   width: 100%;
   border: none;
@@ -316,6 +346,7 @@ button a {
   font-size: 40px;
   font-weight: 100px;
   padding: 40px;
+  z-index: 1;
 }
 
 .video-grid {
@@ -494,7 +525,8 @@ footer a {
 input[type="email"], input[type="text"] {
   font-size: 20px;
   text-align: left;
-  padding: 5px;
+  padding: 5px 10px;
+  /* width: 600px; */
 }
 
 .email-signup-button {
@@ -506,6 +538,7 @@ input[type="email"], input[type="text"] {
   text-align: center;
   transition-duration: 100ms; 
   cursor: pointer;
+  text-align: center;
 }
 
 .email-signup-button:hover {
