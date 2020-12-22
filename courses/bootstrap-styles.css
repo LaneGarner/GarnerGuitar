@@ -229,3 +229,28 @@ p {
 .hand-position img {
     margin: 30px;
 }
+
+.fa-edit, .fa-check, .fa-times, .fa-undo {
+    color: #999;
+    cursor: pointer;
+}
+
+.fa-check, .fa-window-close {
+    font-size: 1.2rem;
+}
+
+.fa-edit:hover {
+    color: #007CFE;
+}
+
+.fa-check:hover {
+    color: #2ECC40;
+}
+
+.fa-undo:hover {
+    color: #007CFE;
+}
+
+.fa-times:hover {
+    color: tomato;
+}

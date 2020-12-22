@@ -1,0 +1,447 @@
+bplist00�_WebMainResource_WebSubresources�	
+
+_WebResourceFrameName_WebResourceData_WebResourceMIMEType_WebResourceTextEncodingName^WebResourceURLPO(�<!DOCTYPE html><html><head>
+<title>In-home guitar lessons in Austin, Texas</title>
+
+<!--header menu -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<style>
+body {margin:0;}
+
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #b1b1b1;
+  color: black;
+}
+
+.navbar .current {
+  background: #ddd;
+  color: black;
+}
+
+.main {
+  padding: 16px;
+  margin-top: 2px;
+  height: 1500px;
+}
+.img1 {
+  float: left;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+.img2 {
+  float: right;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: OrangeRed;
+  color: white;
+  opacity: 0.92;
+  text-align: center;
+}
+
+ul {text-align: center; list-style-position: inside;}
+
+ol {text-align: center; list-style-position: inside;}
+
+
+
+
+</style>
+</head>
+
+
+<body>
+
+<div class="navbar">
+  <a href="Guitar-Lessons-Austin-Texas-Garner-Guitar.html" class="current">Book a Lesson</a>
+  <a href="Free-Lessons-Guitar-Lessons-Austin-Texas.html">Free Lessons</a>
+  <a href="Resources-Guitar-Lessons-Austin-Texas.html">Resources</a>   
+  </div>
+
+<div class="main">
+
+
+
+
+
+<!--page header text-->
+
+
+
+
+<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+  <h3 style="text-align:center;">Learn guitar or take your skills to the next level</h3>
+
+
+
+<p><img class="img1" src="images/Lane-Garner-guitar-lessons-austin-texas.jpg" width="300" height="300"><strong>Hi, I'm Lane Garner.</strong>&nbsp; I’ve been teaching guitar lessons for over ten years and have experience with students of all ages and experience levels. I have Masters and Bachelors degrees in Jazz Studies from the University of North Texas. As a performer I have traveled all over the country and world playing various styles ranging from jazz, rock, and pop to classical, country, worship music, and more. I am currently filling my lesson studio here in Austin.</p>
+
+
+<p>I offer private guitar lessons to students in Austin, TX wishing to learn guitar or develop their guitar and music skills beyond a beginner level. We will take your playing to the next level by studying music theory, technique, jazz and blues improvisation, gear and tone, reading music, playing styles, and more.</p>
+
+<p>Whether you just started playing guitar or you’ve played for years there is always something new to learn about music. My primary goal as a teacher is to focus intently on specific aspects of each student's musicianship- technique, harmonic concepts, ear-training, theory, etc while making each lesson fun for the student. It is my goal to improve the student’s playing by the end of each and every lesson. I find it important to teach fundamentals of music as well as any additional material the student is interested in learning. In my 10+ years of teaching guitar I’ve worked with students of all levels and ages 5 to 65. I’ve taught total beginners, intermediate players, college music majors, and even working musicians. </p>
+
+<hr>
+
+<img class="img2" src="images/Guitar-lessons-Austin-tx-map.jpg" alt="Map Guitar lessons Austin Texas" width="300" height="300">
+<h3 style="text-align:center;">In-home guitar lessons - Austin, Texas</h3>
+
+<p>Convenient in-home guitar lessons in Austin, TX and surrounding areas. I come to you! I will travel throughout the Austin area to your home for lessons. This will not only make it easier on you not driving to yet another appointment but also has the added benefit of learning from the comfort of your own home. Setting up a space where we do lessons will also serve as a spot for you to practice—in turn deepening that association.</p>
+
+
+
+
+
+<h2 style="text-align:center" ;="">Let's see if we’re a good fit</h2>
+
+
+
+
+<h3 style="text-align:center" ;=""><a href="mailto: lane@garnerguitar.com" style="color:black">lane@garnerguitar.com</a><br>
+or call/text:<br>
+<a href="tel:512-522-0276" style="color:black">512-522-0276</a></h3>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<!--background 1-->
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-1 {
+  background-image: url("images/guitar-lessons-austin-texas1.jpg");
+  min-height: 50%;
+}
+
+.bgimg-2 {
+  background-image: url("images/guitar-lessons-austin-texas-6.jpg");
+  min-height: 800px;
+}
+
+.bgimg-3 {
+  background-image: url("images/guitar-lessons-austin-texas-bass-guitar.jpg");
+  min-height: 400px;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 10px;
+  font-size: 16px;
+  letter-spacing: 8px;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+  }
+}
+</style>
+
+
+
+
+
+<div class="bgimg-1">
+  <div class="caption">
+  <span class="border">"Music is a more potent instrument than any other for education." - Plato</span>
+  </div>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+  
+
+
+<h3 style="text-align:center;">Rates</h3>
+
+<h2 style="text-align:center" ;="">Private lessons</h2>
+<p style="text-align:center" ;="">Custom-tailored one-on-one lessons are available online through Skype or in-home in Austin, Texas. Students have access to personalized lesson &amp; practice plans, repertoire list, and lesson calendar as well as customized sheet music and backing tracks</p><p>
+
+	</p><ul style="text-align:center">
+	  <li><strong>Single lesson: $80/one hour lesson and $50/half-hour lesson</strong></li><strong>
+	  <li>$300 per month for weekly one hour lessons ($20 savings)</li>
+	  <li>$180 per month for weekly half-hour lessons ($20 savings)</li>
+	</strong></ul>
+
+<h2 style="text-align:center" ;="">Group lessons</h2>
+<p style="text-align:center">Group lessons are a great way to learn guitar in a more social and interactive environment. One of the primary reasons to learn an instrument is to play music with others and group lessons are a great way to get started. All group lessons are one hour and are currently available in-person only.</p>
+
+	<ul style="text-align:center">
+	  <li><strong>Two students- $50/hour for each student paid as $200/month</strong></li><strong>
+	  <li>Three students- $45/hour for each student paid as $180/month</li>
+	  </strong><li><strong>Four (or more) students- $40/hour for each student paid as $160/month</strong></li>
+	  
+
+  
+
+
+
+
+
+
+</ul></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="bgimg-2">
+
+
+
+  
+
+ <div class="caption">
+
+   </div>
+
+
+
+
+
+<div class="caption">
+
+  <span class="border">Online Lessons:<br><br><br>Don’t live in Austin? No problem.<br> <br>We can meet for virtual lessons on Skype or FaceTime.</span>
+  </div>
+
+
+</div>
+
+
+
+
+
+<!--RATES SECTION-->
+
+
+
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+  
+<h3 style="text-align:center" ;="">"The only truth is music."</h3>
+
+
+<p style="text-align:center">-Jack Kerouac</p>
+
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="bgimg-3">
+  <div class="caption">
+  <div class="caption">
+  <span class="border">Interested in bass?<br><br>I also offer bass guitar lessons</span>
+  </div>
+
+
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+  
+  <h3 style="font-family:Arial;text-align:center;">Online courses</h3>
+
+  <p style="text-align:center;">Coming soon...</p>
+  </div>
+</div>
+
+<div class="bgimg-1">
+  <div class="caption">
+  <span class="border">Take your playing to the next level</span>
+  </div>
+</div>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/guitar-lessons-austin-texas5.jpg");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hero-text button:hover {
+  background-color: #555;
+  color: white;
+}
+</style>
+
+
+
+<div class="hero-image" ;id="book">
+  <div class="hero-text">
+    <h1 style="font-size:50px">Schedule a lesson now</h1>
+    <button><a href="mailto:Lane@GarnerGuitar.com" style="color:black">Book a lesson</a></button><a href="mailto:Lane@GarnerGuitar.com" style="color:black">
+
+
+  </a></div><a href="mailto:Lane@GarnerGuitar.com" style="color:black">
+</a></div><a href="mailto:Lane@GarnerGuitar.com" style="color:black">
+
+</a><div class="footer"><a href="mailto:Lane@GarnerGuitar.com" style="color:black">
+  </a><p><a href="mailto:Lane@GarnerGuitar.com" style="color:black">Schedule a lesson now: 
+  </a><a href="tel:512-522-0276" style="color:white">512-522-0276</a> |
+  <a href="mailto:Lane@GarnerGuitar.com" style="color:white">Lane@GarnerGuitar.com</a> 
+  </p>
+</div>
+
+
+<p style="text-align:center" ;="">Copyright © 2020 Garner Guitar</p>
+<br>
+<br>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+
+
+  

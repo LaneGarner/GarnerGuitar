@@ -440,11 +440,6 @@ footer p {
   transition-duration: 100ms;
 }
 
-#follow:hover {
-  color: #111;
-  transition-duration: 500ms;
-}
-
 footer a {
   padding: 4px;
   color: 565B5E;

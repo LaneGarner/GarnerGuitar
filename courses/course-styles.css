@@ -114,3 +114,7 @@ h2 {
 p {
     margin-right: 600px;
 }
+
+.edit {
+    display: none;
+}
