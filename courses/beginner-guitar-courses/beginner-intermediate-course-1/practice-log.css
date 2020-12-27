@@ -1,0 +1,62 @@
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table {
+    width: 100%;
+}
+
+input, textarea, td span {
+    width: 100%;
+    height: 100%;
+    border: none;
+    margin: 0;
+    outline: none;
+}
+
+textarea {
+    resize: none;
+}
+
+th {
+    background-color: #AAA;
+}
+
+
+.small-column {
+    width: 12%;
+}
+
+button {
+    margin: 10px auto;
+    cursor: pointer;
+}
+
+.edit-hover {
+    position: absolute;
+}
+
+.remove-hover {
+    position: absolute;
+    left: 60px;
+}
+
+td {
+    padding: 10px;
+    /* valign: top; */
+}
+
+.fa-edit, .fa-trash-alt {
+    color: #999;
+    cursor: pointer;
+}
+
+.fa-edit:hover {
+    color: 007CFE;
+}
+
+.fa-trash-alt:hover {
+    color: tomato;
+}
+
