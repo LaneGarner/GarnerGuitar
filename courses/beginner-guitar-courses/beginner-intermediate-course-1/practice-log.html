@@ -10,6 +10,7 @@
   <!-- <script src="https://kit.fontawesome.com/8e892fa9ba.js" crossorigin="anonymous"></script> -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
   <script src="practice-log.js" defer></script>
+  <script src="timer.js" defer></script>
 </head>
 
 <body>
@@ -178,19 +179,69 @@
 
       <div>
         <h1>Practice log</h1>
-        <!-- <div><strong>Current streak: </strong>1 day</div>
-        <div><strong>Longest streak: </strong>1 day</div>
-        <div><strong>Practice time this week: </strong>1hr 00min</div>
-        <div><strong>Total practice time: </strong>1hr 00min</div>
-        <div><strong>Total practice sessions: </strong>1</div>
-        <div>Average weekly practice, longest practice session, topic pie chart</div> -->
-        <h2>New practice session</h2>
-        <h3></h3>
-        <button>New practice timer</button>
-        <button class="pauseTimerBtn">Pause timer</button>
-        <button class="endTimerBtn">End timer</button>
+        <!-- <h2><i id="minusSign" class="fas fa-minus-circle"></i> Practice stats</h2>
+
+        <div id="streaks">
+          <div><strong>Current streak: </strong>1 day</div>
+          <div><strong>Longest streak: </strong>1 day</div>
+          <div><strong>Practice time this week: </strong>1hr 00min</div>
+          <div><strong>Total practice time: </strong>1hr 00min</div>
+          <div><strong>Total practice sessions: </strong>1</div>
+          <div>Average weekly practice, longest practice session, topic pie chart</div>
+        </div> -->
+        <h2 id="displayFormShow"><i id="plusSign" class="fas fa-chevron-circle-down"></i> New practice session</h2>
+        <h2 id="displayFormHide"><i id="minusSign" class="fas fa-minus-circle"></i> New practice session</h2>
+        <!-- <i class="fas fa-chevron-down"></i> -->
+        <!-- <button class="pauseTimerBtn">Pause timer</button>
+          <button class="endTimerBtn">End timer</button> -->
+          <div id="formDisplay">
+            <form id="submit" onsubmit="return false">
+              <div id="timerContainer">
+                <h3>Practice timer</h3>
+                <hr>
+                <div id="timer">00:00:00</div>
+                <div id="practiceTimerStartBtn" onclick="startTimer()">Start</div>
+                <div id="practiceTimerEndBtn">Stop</div>
+                <div id="practiceTimerResetBtn">Reset</div>
+              </div>
+              <div>
+                <h3>Start time</h3>
+                <hr>
+                <label for="startDateInput">Date *</label><br>
+                <input type="date" id="startDateInput" placeholder="mm/dd/yyyy" required><br>
+                <label for="startTimeInput">Start time *</label><br>
+                <input type="time" id="startTimeInput" required>
+              <!-- </div>
+              <div> -->
+                <h3>End time</h3>
+                <hr>
+                <label for="endDateInput">Date *</label><br>
+                <input type="date" id="endDateInput" placeholder="mm/dd/yyyy" required><br>
+                <label for="endTimeInput">End time *</label><br>
+                <input type="time" id=endTimeInput required>
+              </div>
+              <div>
+                <h3>Material</h3>
+                <hr>
+                <label for="topicInput">Topic *</label><br>
+                <textarea name="" id="topicInput" cols="" rows="2" placeholder="What are you practicing?" required></textarea><br>
+                <!-- </div>
+                <div> -->
+                <label for="notesInput">Notes</label><br>
+                <textarea name="" id="notesInput" cols="" rows="5" placeholder="Add notes like tempos, keys, and goals here..."></textarea><br>
+                <label for="attachmentsInput">Attachments</label><br>
+                <input id="attachmentsInput" type="text"><br>
+                <input type="submit">
+              </div>
+              <!-- <div>
+                <h3>Tools</h3>
+                <i class="fas fa-microphone"></i>
+                <i class="fas fa-random"></i>
+              </div> -->
+            </form>
+          </div>
         
-        <form onsubmit="return false">
+        <!-- <form id="submit" onsubmit="return false">
           <table>
             <thead>
               <tr>
@@ -222,12 +273,15 @@
               </tr>
             </tbody>
           </table>
-          <input type="submit" onclick="addItem()">
-          <!-- <button onclick="addItem()">Add</button> -->
-        </form>
+          <input type="submit">
+          <!-- <button onclick="addItem()">Add</button> ~~>
+        </form> -->
+
+        <!-- <h2>My practice log</h2> -->
+        <h2 id="displayLogShow"><i id="plusSign" class="fas fa-chevron-circle-down"></i> My practice log</h2>
+        <h2 id="displayLogHide"><i id="minusSign" class="fas fa-minus-circle"></i> My practice log</h2>
 
         <div id="myPracticeLogDisplay">
-          <h2>My practice log</h2>
           <table>
             <thead>
               <tr>
@@ -235,7 +289,7 @@
                 <th class="small-column" id="startHeaderLog">Start time</th>
                 <th class="small-column" id="endHeaderLog">End time</th>
                 <th class="small-column" id="totalHeaderLog">Total Time</th>
-                <th class="large-column" id="notesHeaderLog">Topic/Notes</th>
+                <th class="large-column" id="notesHeaderLog">Material</th>
               </tr>
             </thead>
             <tbody id="myPracticeLog">
@@ -244,7 +298,6 @@
           <button onclick="testFunction()">Test</button>
           <br>
         </div>
-
       </div>
 
       <a href="practicing.html" class="course-navagation"><i class="fas fa-chevron-circle-left"></i>

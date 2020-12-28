@@ -1,14 +1,23 @@
-// const testFunction = () => {
-
-//     console.log('howdy')
-// }
 
 
-const dateInput = document.querySelector("#dateInput");
+const displayForm = document.querySelector("#displayForm");
+const formDisplay = document.querySelector("#formDisplay");
+const minusSign = document.querySelector("#minusSign");
+const plusSign = document.querySelector("#plusSign");
+const practiceTimerStartBtn = document.querySelector("#practiceTimerStartBtn");
+const practiceTimerEndBtn = document.querySelector("#practiceTimerEndBtn");
+const practiceTimerResetBtn = document.querySelector("#practiceTimerResetBtn");
+const startDateInput = document.querySelector("#startDateInput");
+const endDateInput = document.querySelector("#endDateInput");
 const startTimeInput = document.querySelector("#startTimeInput");
 const endTimeInput = document.querySelector("#endTimeInput");
 const topicInput = document.querySelector("#topicInput");
 const notesInput = document.querySelector("#notesInput");
+const submit = document.querySelector("#submit");
+
+
+const displayLogShow = document.querySelector("#displayLogShow");
+const displayLogHide = document.querySelector("#displayLogHide");
 const myPracticeLogDisplay = document.querySelector("#myPracticeLogDisplay");
 const dateInputCell = document.querySelector("#dateInputCell");
 const startInputCell = document.querySelector("#startInputCell");
@@ -23,23 +32,63 @@ notesHeader = document.querySelector("#notesHeader");
 
 let entries = [];
 
+const diff_minutes = (dt2, dt1) => {
+
+    let diff =(dt2.getTime() - dt1.getTime()) / 1000;
+    diff /= 60;
+    return Math.abs(Math.round(diff));
+}
+
 const addItem = () => {    
-    let date = new Date(dateInput.value);
-        date.setMinutes( date.getMinutes() + date.getTimezoneOffset() );
+    // let date = new Date(dateInput.value);
+        // date.setMinutes( date.getMinutes() + date.getTimezoneOffset() );
         // date = date.toDateString();
-    const startTime = startTimeInput.value;
-    const endTime = endTimeInput.value;
+    // let startTime = new Date(date)
+
+
+    // const startTime = startTimeInput.value;
+    // const endTime = endTimeInput.value;
+
+    // let startTime = new Date(dateInput.value);
+    // startTime.setMinutes( startTime.getMinutes() + startTime.getTimezoneOffset() );
+    // const startTimeInputArr = startTimeInput.value.split(":")
+    // startTime.setHours(startTimeInputArr[0], startTimeInputArr[1])
+    // // startTime.setMinutes(startTimeInputArr[1])
+    // console.log(startTimeInputArr[0])
+
+    let startTime = new Date(startDateInput.value);
+    startTime.setMinutes( startTime.getMinutes() + startTime.getTimezoneOffset() );
+    const startTimeInputArr = startTimeInput.value.split(":")
+    startTime.setHours(startTimeInputArr[0])
+    startTime.setMinutes(startTimeInputArr[1])
+    console.log(startTime)
+    
+    let endTime = new Date(endDateInput.value);
+    endTime.setMinutes( endTime.getMinutes() + endTime.getTimezoneOffset() );
+    const endTimeInputArr = endTimeInput.value.split(":")
+    endTime.setHours(endTimeInputArr[0])
+    endTime.setMinutes(endTimeInputArr[1])
+    console.log(endTime)
+    
+    const totalTime = diff_minutes(endTime, startTime)
+    // let date = startTime.toDateString();
+    // console.log(date)
+    // const totalTime = "wtf"
+
+
+
     const topic = topicInput.value;
     const notes = notesInput.value;
     //total time math
-    const startTimeSplit = startTime.split(":");
-    const endTimeSplit = endTime.split(":");
-    const hrMath = endTimeSplit[0] - startTimeSplit[0];
-    const minMath = endTimeSplit[1] - startTimeSplit[1];
-    const totalTime = {"hrs": hrMath, "min": minMath};
+    // const startTimeSplit = startTime.split(":");
+    // const endTimeSplit = endTime.split(":");
+    // const hrMath = endTimeSplit[0] - startTimeSplit[0];
+    // const minMath = endTimeSplit[1] - startTimeSplit[1];
+    // const totalTime = {"hrs": hrMath, "min": minMath};
 
-    const entry = {"date": date, "startTime": startTime, "endTime": endTime, "totalTime": totalTime, "topic": topic, "notes": notes};
+    const entry = {"startTime": startTime, "endTime": endTime, "totalTime": totalTime, "topic": topic, "notes": notes};
     entries.push(entry);
+    
 
     localStorage.setItem("entries", JSON.stringify(entries));
     displayLog();
@@ -47,13 +96,14 @@ const addItem = () => {
 
 
 const to12Hr = (time) => {
-    let newStartTime = time.split(":");
-    let hours = newStartTime[0];
+    let newTime = time.split(":");
+    let hours = newTime[0];
     const AmOrPm = hours >= 12 ? "PM" : "AM";
         hours = (hours % 12) || 12;
-    const minutes = newStartTime[1];
+    const minutes = newTime[1];
     const finalTime = `${hours}:${minutes} ${AmOrPm}`;
     return finalTime
+    // return time
 }
 
 const dateFormat = (date) => {
@@ -64,7 +114,7 @@ const dateFormat = (date) => {
     return finalDate;
 }
 
-const showHideMyLog = () => {
+const showHideLog = () => {
     if(JSON.parse(localStorage.getItem("entries")).length === 0 || JSON.parse(localStorage.getItem("entries")) === null){
         // console.log(myPracticeLogDisplay)
         myPracticeLogDisplay.style.display = "none";
@@ -77,82 +127,94 @@ const showHideMyLog = () => {
 const displayLog = () => {
     const myPracticeLog = document.querySelector("#myPracticeLog");
 
-    let newEntries = localStorage.getItem("entries");
-    newEntries = JSON.parse(newEntries);
+    let displayEntries = localStorage.getItem("entries");
+    displayEntries = JSON.parse(displayEntries);
+    displayEntries.sort(function(a, b) {
+        var dateA = new Date(a.startTime), dateB = new Date(b.endTime);
+        return dateA - dateB;
+    });
+
     myPracticeLog.textContent = ""
-    newEntries.forEach(ent => {
+
+    displayEntries.forEach(ent => {
         // console.log(dateFormat(ent.date));
         const row = document.createElement("tr");
 
-        
-        const newDate = document.createElement("td");
-            newDate.textContent = dateFormat(ent.date);
-                const newDateInput = document.createElement("input");
-                    newDateInput.setAttribute("type", "date");
-                    newDateInput.style.display = "none";
+        const displayDate = document.createElement("td");
+        const newDate = new Date(ent.startTime).toDateString()
+        displayDate.textContent = newDate;
+        console.log("NEW DATE:", newDate)
+                const displayDateInput = document.createElement("input");
+                    displayDateInput.setAttribute("type", "date");
+                    displayDateInput.style.display = "none";
+
                     const dateEditBtn = document.createElement("i");
                         dateEditBtn.className = "fas fa-edit edit-hover";
                         dateEditBtn.style.display= "none";
-                        newDate.appendChild(dateEditBtn);
+                        displayDate.appendChild(dateEditBtn);
+
                     const removeDateBtn = document.createElement("i");
                         removeDateBtn.className = "far fa-trash-alt remove-hover";
                         removeDateBtn.style.display = "none";
-                        newDate.appendChild(removeDateBtn);
-                newDate.addEventListener("mouseover", function showEditDateBtn() {
+                        displayDate.appendChild(removeDateBtn);
+
+                displayDate.addEventListener("mouseover", function showBtn() {
                     dateEditBtn.style.display= "block";
                     removeDateBtn.style.display = "block"
                 });
-                newDate.addEventListener("mouseout", function showEditDateBtn() {
+                displayDate.addEventListener("mouseout", function showBtn() {
                     dateEditBtn.style.display= "none";
                     removeDateBtn.style.display= "none";
                 });
-                newDate.appendChild(newDateInput);
-            row.appendChild(newDate);
+                displayDate.appendChild(displayDateInput);
+            row.appendChild(displayDate);
             
         
         
-        const newStartTime = document.createElement("td");
-            newStartTime.textContent = to12Hr(ent.startTime);
+        const displayStartTime = document.createElement("td");
+            const startTimeDate = new Date(ent.startTime).toString()
+            displayStartTime.textContent = to12Hr(startTimeDate.slice(16,21));
             const newStartInput = document.createElement("input");
                 newStartInput.setAttribute("type", "time");
                 newStartInput.style.display = "none";
             const startEditBtn = document.createElement("i");
                 startEditBtn.className = "fas fa-edit edit-hover";
                 startEditBtn.style.display= "none";
-                newStartTime.appendChild(startEditBtn);
-                newStartTime.addEventListener("mouseover", function showEditBtn() {
+                displayStartTime.appendChild(startEditBtn);
+                displayStartTime.addEventListener("mouseover", function showEditBtn() {
                     startEditBtn.style.display= "block";
                 });
-                newStartTime.addEventListener("mouseout", function showEditBtn() {
+                displayStartTime.addEventListener("mouseout", function showEditBtn() {
                     startEditBtn.style.display= "none";
                 });
-                newStartTime.appendChild(newStartInput);
-            row.appendChild(newStartTime);
+                displayStartTime.appendChild(newStartInput);
+            row.appendChild(displayStartTime);
 
 
 
-            const newEndTime = document.createElement("td");
-                newEndTime.textContent = to12Hr(ent.endTime);
+            const displayEndTime = document.createElement("td");
+                const endTimeDate = new Date(ent.endTime).toString()
+                displayEndTime.textContent = to12Hr(endTimeDate.slice(16,21));
                 const newEndInput = document.createElement("input");
                     newEndInput.setAttribute("type", "time");
                     newEndInput.style.display = "none";
                 const endEditBtn = document.createElement("i");
                     endEditBtn.className = "fas fa-edit edit-hover";
                     endEditBtn.style.display= "none";
-                    newEndTime.appendChild(endEditBtn);
-                    newEndTime.addEventListener("mouseover", function showEditBtn() {
+                    displayEndTime.appendChild(endEditBtn);
+                    displayEndTime.addEventListener("mouseover", function showEditBtn() {
                     endEditBtn.style.display= "block";
                     });
-                    newEndTime.addEventListener("mouseout", function showEditBtn() {
+                    displayEndTime.addEventListener("mouseout", function showEditBtn() {
                         endEditBtn.style.display= "none";
                     });
-                    newEndTime.appendChild(newEndInput);
-                row.appendChild(newEndTime);
+                    displayEndTime.appendChild(newEndInput);
+                row.appendChild(displayEndTime);
 
 
 
             const totalTime = document.createElement("td");
-                totalTime.textContent = `${ent.totalTime.hrs}hrs ${ent.totalTime.min}min`;
+                totalTime.textContent = `${ent.totalTime}min`;
                 row.appendChild(totalTime);
 
 
@@ -168,10 +230,10 @@ const displayLog = () => {
                     topicEditBtn.className = "fas fa-edit edit-hover";
                     topicEditBtn.style.display= "none";
                     topicNotes.appendChild(topicEditBtn);
-                    topicNotes.addEventListener("mouseover", function showEditBtn() {
+                    topicNotes.addEventListener("mouseover", function() {
                     topicEditBtn.style.display= "block";
                     });
-                    topicNotes.addEventListener("mouseout", function showEditBtn() {
+                    topicNotes.addEventListener("mouseout", function() {
                         topicEditBtn.style.display= "none";
                     });
                     topicNotes.appendChild(newTopicInput);
@@ -183,7 +245,7 @@ const displayLog = () => {
 
         myPracticeLog.insertAdjacentElement("afterbegin", row);
     })
-    showHideMyLog();
+    showHideLog();
 }
 
 const resizeRows = () => {
@@ -197,43 +259,42 @@ const resizeRows = () => {
     }
 }
 
-const handleFieldClick = () => {
-    dateInputCell.addEventListener("click", function() {
-        dateInput.focus();
-    })
-    dateHeader.addEventListener("click", function() {
-        dateInput.focus();
-    })
-    startInputCell.addEventListener("click", function() {
-        startTimeInput.focus();
-    })
-    startHeader.addEventListener("click", function() {
-        startTimeInput.focus();
-    })
-    endInputCell.addEventListener("click", function() {
-        endTimeInput.focus();
-    })
-    endHeader.addEventListener("click", function() {
-        endTimeInput.focus();
-    })
-    topicCell.addEventListener("click", function() {
-        topicInput.focus();
-    })
-    topicHeader.addEventListener("click", function() {
-        topicInput.focus();
-    })
-    notesInputCell.addEventListener("click", function() {
-        notesInput.focus();
-    })
-    notesHeader.addEventListener("click", function() {
-        notesInput.focus();
-    })
-}
+// const handleFieldClick = () => {
+//     dateInputCell.addEventListener("click", function() {
+//         dateInput.focus();
+//     })
+//     dateHeader.addEventListener("click", function() {
+//         dateInput.focus();
+//     })
+//     startInputCell.addEventListener("click", function() {
+//         startTimeInput.focus();
+//     })
+//     startHeader.addEventListener("click", function() {
+//         startTimeInput.focus();
+//     })
+//     endInputCell.addEventListener("click", function() {
+//         endTimeInput.focus();
+//     })
+//     endHeader.addEventListener("click", function() {
+//         endTimeInput.focus();
+//     })
+//     topicCell.addEventListener("click", function() {
+//         topicInput.focus();
+//     })
+//     topicHeader.addEventListener("click", function() {
+//         topicInput.focus();
+//     })
+//     notesInputCell.addEventListener("click", function() {
+//         notesInput.focus();
+//     })
+//     notesHeader.addEventListener("click", function() {
+//         notesInput.focus();
+//     })
+// }
 
 
 const pageLoadDisplay = () => {
     resizeRows();
-    handleFieldClick();
     if (localStorage.getItem("entries")) {
         displayLog();
         console.log("existing user");
@@ -242,6 +303,90 @@ const pageLoadDisplay = () => {
         localStorage.setItem("entries", JSON.stringify([]));
         displayLog();
     }
+    // handleFieldClick();
+    // formDisplay.style.display = "none";
+    displayFormShow.style.display = "none";
+    practiceTimerEndBtn.style.display = "none";
+
+    displayFormShow.addEventListener("click", function() {
+        formDisplay.style.display = "block";
+        displayFormShow.style.display = "none";
+        displayFormHide.style.display = "block";
+    })
+    displayFormHide.addEventListener("click", function() {
+        formDisplay.style.display = "none";
+        displayFormShow.style.display = "block";
+        displayFormHide.style.display = "none";
+    })
+    practiceTimerStartBtn.addEventListener("click", function() {
+        practiceTimerStartBtn.style.display = "none";
+        practiceTimerEndBtn.style.display = "block";
+        const newDate = new Date(Date.now());
+        const year = newDate.getFullYear();
+        const date = newDate.getDate();
+        const month = newDate.getMonth() + 1;
+        const finalDate = `${year}-${month}-${date}`
+
+        startDateInput.value = finalDate;
+        
+        const newTime = newDate.toTimeString();
+        startTimeInput.value = newTime.slice(0,5);
+    })
+    practiceTimerEndBtn.addEventListener("click", function() {
+        practiceTimerStartBtn.style.display = "block";
+        practiceTimerEndBtn.style.display = "none";
+        const newDate = new Date(Date.now());
+        const year = newDate.getFullYear();
+        const date = newDate.getDate();
+        const month = newDate.getMonth() + 1;
+        const finalDate = `${year}-${month}-${date}`
+        endDateInput.value = finalDate;
+        
+        const newTime = newDate.toTimeString();
+        endTimeInput.value = newTime.slice(0,5);
+    })
+    submit.addEventListener("submit", function() {
+        addItem();
+        submit.reset()
+    })
+
+    if (myPracticeLogDisplay.style.display = "block") {
+        displayLogShow.style.display = "none";
+        displayLogHide.style.display = "block";
+    } else if (myPracticeLogDisplay.style.display = "none") {
+        displayLogShow.style.display = "block";
+        displayLogHide.style.display = "none";
+        myPracticeLogDisplay.style.display = "none";
+
+    }
+
+    displayLogShow.addEventListener("click", function() {
+        myPracticeLogDisplay.style.display = "block";
+        displayLogShow.style.display = "none";
+        displayLogHide.style.display = "block";
+    })
+    displayLogHide.addEventListener("click", function() {
+        myPracticeLogDisplay.style.display = "none";
+        displayLogShow.style.display = "block";
+        displayLogHide.style.display = "none";
+    })
+
+
+
+    // formDisplay.style.display = "none";
+    // displayFormHide.style.display = "none";
+
+    displayFormShow.addEventListener("click", function() {
+        formDisplay.style.display = "block";
+        displayFormShow.style.display = "none";
+        displayFormHide.style.display = "block";
+    })
+    displayFormHide.addEventListener("click", function() {
+        formDisplay.style.display = "none";
+        displayFormShow.style.display = "block";
+        displayFormHide.style.display = "none";
+    })
+
 }
 
 pageLoadDisplay();
@@ -254,6 +399,48 @@ const clearPracticeLog = () => {
     }
 }
 
+
+
+
+const testFunction = () => {
+
+    // console.log('howdy')
+
+    // let startTime = new Date(dateInput.value);
+    // startTime.setMinutes( startTime.getMinutes() + startTime.getTimezoneOffset() );
+    // // date = date.toDateString();
+    // startTimeInput = startTimeInput.value.split(":")
+    // startTime.setHours(startTimeInput[0])
+    // startTime.setMinutes(startTimeInput[1])
+
+    // let endTime = new Date(dateInput.value);
+    // endTime.setMinutes( endTime.getMinutes() + endTime.getTimezoneOffset() );
+    // endTimeInput = endTimeInput.value.split(":")
+    // endTime.setHours(endTimeInput[0])
+    // endTime.setMinutes(endTimeInput[1])
+    
+    // const totalTime = diff_minutes(endTime, startTime)
+    
+    // let startTime = new Date(dateInput.value);
+    // startTime.setMinutes( startTime.getMinutes() + startTime.getTimezoneOffset() );
+    // const startTimeInputArr = startTimeInput.value.split(":")
+    // startTime.setHours(startTimeInputArr[0])
+    // startTime.setMinutes(startTimeInputArr[1])
+
+    let displayEntries = localStorage.getItem("entries");
+    displayEntries = JSON.parse(displayEntries);
+    displayEntries.sort(function(a, b) {
+        var dateA = new Date(a.startTime), dateB = new Date(b.endTime);
+        return dateA - dateB;
+    });
+
+    myPracticeLog.textContent = ""
+
+    displayEntries.forEach(ent => {
+        const date = new Date(ent.startTime)
+        console.log(date.toString())
+    })
+}
 
 
 
