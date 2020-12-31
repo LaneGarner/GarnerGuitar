@@ -200,25 +200,30 @@
                 <h3>Practice timer</h3>
                 <hr>
                 <div id="timer">00:00:00</div>
-                <div id="practiceTimerStartBtn" onclick="startTimer()">Start</div>
+                <div id="practiceTimerStartBtn">Start</div>
+                <div id="practiceTimerPauseBtn">Pause</div>
                 <div id="practiceTimerEndBtn">Stop</div>
                 <div id="practiceTimerResetBtn">Reset</div>
               </div>
               <div>
-                <h3>Start time</h3>
+                <h3>Session</h3>
                 <hr>
-                <label for="startDateInput">Date *</label><br>
-                <input type="date" id="startDateInput" placeholder="mm/dd/yyyy" required><br>
-                <label for="startTimeInput">Start time *</label><br>
-                <input type="time" id="startTimeInput" required>
+                <label for="startDateInput">Start time *</label><br>
+                <input type="datetime-local" id="startDateInput" required><br>
+                <!-- <input type="datetime-local" id="startDateInput" value="2000-07-01T12:00" required><br> -->
+                <!-- <input type="date" id="startDateInput" placeholder="mm/dd/yyyy" required><br> -->
+                <!-- <label for="startTimeInput">Start time *</label><br> -->
+                <!-- <input type="time" id="startTimeInput" required> -->
+                <label for="totalTime">Total practice time *</label>
+                <input id="totalTime" type="text" required>
               <!-- </div>
               <div> -->
-                <h3>End time</h3>
+                <!-- <h3>End time</h3>
                 <hr>
                 <label for="endDateInput">Date *</label><br>
                 <input type="date" id="endDateInput" placeholder="mm/dd/yyyy" required><br>
                 <label for="endTimeInput">End time *</label><br>
-                <input type="time" id=endTimeInput required>
+                <input type="time" id=endTimeInput required> -->
               </div>
               <div>
                 <h3>Material</h3>
@@ -230,7 +235,7 @@
                 <label for="notesInput">Notes</label><br>
                 <textarea name="" id="notesInput" cols="" rows="5" placeholder="Add notes like tempos, keys, and goals here..."></textarea><br>
                 <label for="attachmentsInput">Attachments</label><br>
-                <input id="attachmentsInput" type="text"><br>
+                <input id="attachmentsInput" type="file"><br>
                 <input type="submit">
               </div>
               <!-- <div>
@@ -287,7 +292,7 @@
               <tr>
                 <th class="small-column" id="dateHeaderLog">Date</th>
                 <th class="small-column" id="startHeaderLog">Start time</th>
-                <th class="small-column" id="endHeaderLog">End time</th>
+                <!-- <th class="small-column" id="endHeaderLog">End time</th> -->
                 <th class="small-column" id="totalHeaderLog">Total Time</th>
                 <th class="large-column" id="notesHeaderLog">Material</th>
               </tr>

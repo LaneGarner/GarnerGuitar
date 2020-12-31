@@ -1,7 +1,9 @@
 const startTimerButton = document.querySelector("#practiceTimerStartBtn");
+const pauseTimerButton = document.querySelector("#practiceTimerPauseBtn");
 const stopTimerButton = document.querySelector("#practiceTimerEndBtn");
 const resetTimerButton = document.querySelector("#practiceTimerResetBtn");
 const timerDisplay = document.querySelector("#timer");
+const totalTime = document.querySelector("#totalTime");
 let startTime, updatedTime, difference, tInterval, savedTime, paused = 0, running = 0;
 
 const startTimer = () => {
@@ -40,13 +42,17 @@ const pauseTimer = () => {
   }
 }
 
+// const stopTimer = () => {
+//     paused = 1;
+// }
+
 const resetTimer = () => {
-  clearInterval(tInterval);
-  savedTime = 0;
-  difference = 0;
-  paused = 0;
-  running = 0;
-  timerDisplay.innerHTML = "00:00:00";
+    clearInterval(tInterval);
+    savedTime = 0;
+    difference = 0;
+    paused = 0;
+    running = 0;
+    timerDisplay.innerHTML = "00:00:00";
   // timerDisplay.style.background = "#A90000";
   // timerDisplay.style.color = "#fff";
   // timerDisplay.style.cursor = "pointer";
@@ -55,6 +61,7 @@ const resetTimer = () => {
   // startTimerButton.style.cursor = "pointer";
   // stopTimerButton.style.cursor = "auto";
 }
+
 
 const getShowTime = () => {
   updatedTime = new Date().getTime();
@@ -99,26 +106,60 @@ const getShowTime = () => {
 
 stopTimerButton.style.display = "none";
 resetTimerButton.style.display = "none";
+pauseTimerButton.style.display = "none";
+
+startTimerButton.addEventListener("click", function() {
+    startTimer();
+    startTimerButton.style.display = "none";
+    pauseTimerButton.style.display = "block";
+    stopTimerButton.style.display = "block";
+    resetTimerButton.style.display = "none";
+
+    const newDate = new Date(Date.now());
+    const year = newDate.getFullYear();
+    const date = newDate.getDate();
+    const month = newDate.getMonth() + 1;
+    const finalDate = `${year}-${month}-${date}`
+    const newTime = newDate.toTimeString();
+    // startTimeInput.value = newTime.slice(0,5);
+    startDateInput.value = `${finalDate}T${newTime.slice(0,5)}`;
+
+})
 
 stopTimerButton.addEventListener("click", function() {
-    if(confirm ("Are you sure you want to end this practice timer? A new end time will be set.")) {    
-        pauseTimer();
-        stopTimerButton.style.display = "none";
+    pauseTimer();
+    console.log(timerDisplay.innerHTML)
+    if(confirm ("Are you sure?")) {
+        // console.log(paused)
+        
+        if(paused === 0){
+            pauseTimer();
+        }
+
         startTimerButton.style.display = "none";
+        pauseTimerButton.style.display = "none";
+        stopTimerButton.style.display = "none";
         resetTimerButton.style.display = "block";
+
+        totalTime.value = timerDisplay.innerHTML;
+
         const newDate = new Date(Date.now());
         const year = newDate.getFullYear();
         const date = newDate.getDate();
         const month = newDate.getMonth() + 1;
         const finalDate = `${year}-${month}-${date}`
-        endDateInput.value = finalDate;
+        // endDateInput.value = finalDate;
         const newTime = newDate.toTimeString();
-        endTimeInput.value = newTime.slice(0,5);
-    } else {
+        // endTimeInput.value = newTime.slice(0,5);
+        } else {
         stopTimerButton.style.display = "block";
         startTimerButton.style.display = "none";
         resetTimerButton.style.display = "none";
     }
+})
+
+pauseTimerButton.addEventListener("click", function() {
+    pauseTimer();
 })
 
 resetTimerButton.addEventListener("click", function() {

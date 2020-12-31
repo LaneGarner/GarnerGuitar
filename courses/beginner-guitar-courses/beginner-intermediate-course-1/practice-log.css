@@ -101,7 +101,7 @@ td {
     padding-top: 25px;
 }
 
-#practiceTimerEndBtn, #practiceTimerStartBtn, #practiceTimerResetBtn, #submit input[type = submit] {
+#practiceTimerEndBtn, #practiceTimerStartBtn, #practiceTimerPauseBtn, #practiceTimerResetBtn, #submit input[type = submit] {
     text-align: center;
     padding: 10px;
     border-radius: 30px;
@@ -117,7 +117,12 @@ td {
     color: #333;
     border: solid 1px #0FC399;
 }
-#submit input[type = submit], #practiceTimerResetBtn {
+
+#practiceTimerPauseBtn {
+    margin-bottom: 20px;
+}
+
+#submit input[type = submit], #practiceTimerResetBtn, #practiceTimerPauseBtn {
     color: #333;
     border: solid 1px #007CFE;
 }
@@ -133,7 +138,7 @@ td {
     /* border: none; */
     background: #0FC399;
 }
-#submit input[type = submit]:hover, #practiceTimerResetBtn:hover {
+#submit input[type = submit]:hover, #practiceTimerResetBtn:hover, #practiceTimerPauseBtn:hover {
     color: white;
     /* border: none; */
     background: #007CFE;
