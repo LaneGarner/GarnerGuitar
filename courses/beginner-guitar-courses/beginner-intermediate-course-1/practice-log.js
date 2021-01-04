@@ -7,6 +7,8 @@ const plusSign = document.querySelector("#plusSign");
 const practiceTimerStartBtn = document.querySelector("#practiceTimerStartBtn");
 const practiceTimerEndBtn = document.querySelector("#practiceTimerEndBtn");
 const practiceTimerResetBtn = document.querySelector("#practiceTimerResetBtn");
+// const timerDisplay = document.querySelector("#timer");
+
 const startDateInput = document.querySelector("#startDateInput");
 const endDateInput = document.querySelector("#endDateInput");
 const startTimeInput = document.querySelector("#startTimeInput");
@@ -264,6 +266,23 @@ const resizeRows = () => {
     }
 }
 
+// const resetTimer = () => {
+//     clearInterval(tInterval);
+//     savedTime = 0;
+//     difference = 0;
+//     paused = 0;
+//     running = 0;
+//     timerDisplay.innerHTML = "00:00:00";
+//   // timerDisplay.style.background = "#A90000";
+//   // timerDisplay.style.color = "#fff";
+//   // timerDisplay.style.cursor = "pointer";
+//   // startTimerButton.classList.remove('lighter');
+//   // stopTimerButton.classList.remove('lighter');
+//   // startTimerButton.style.cursor = "pointer";
+//   // stopTimerButton.style.cursor = "auto";
+// }
+
+
 // const handleFieldClick = () => {
 //     dateInputCell.addEventListener("click", function() {
 //         dateInput.focus();
@@ -355,7 +374,9 @@ const pageLoadDisplay = () => {
     // })
     submit.addEventListener("submit", function() {
         addItem();
-        submit.reset()
+        submit.reset();
+        resetTimer();
+
     })
 
     if (myPracticeLogDisplay.style.display = "block") {
@@ -404,6 +425,7 @@ const clearPracticeLog = () => {
         localStorage.clear();
         localStorage.setItem("entries", JSON.stringify([]));
         displayLog();
+        entries = [];
     }
 }
 
