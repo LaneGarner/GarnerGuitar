@@ -108,6 +108,17 @@ stopTimerButton.style.display = "none";
 resetTimerButton.style.display = "none";
 pauseTimerButton.style.display = "none";
 
+function pad(number, length) {
+
+    var str = '' + number;
+    while (str.length < length) {
+        str = '0' + str;
+    }
+
+    return str;
+
+}
+
 startTimerButton.addEventListener("click", function() {
     startTimer();
     startTimerButton.style.display = "none";
@@ -117,8 +128,11 @@ startTimerButton.addEventListener("click", function() {
 
     const newDate = new Date(Date.now());
     const year = newDate.getFullYear();
-    const date = newDate.getDate();
-    const month = newDate.getMonth() + 1;
+    let date = newDate.getDate();
+    date = pad(date, 2);
+    // console.log(date)
+    let month = newDate.getMonth() + 1;
+    month = pad(month, 2);
     const finalDate = `${year}-${month}-${date}`
     const newTime = newDate.toTimeString();
     // startTimeInput.value = newTime.slice(0,5);
