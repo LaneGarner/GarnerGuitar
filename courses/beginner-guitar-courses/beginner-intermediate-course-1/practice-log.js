@@ -31,7 +31,8 @@ endHeader = document.querySelector("#endHeader");
 topicHeader = document.querySelector("#topicHeader");
 notesHeader = document.querySelector("#notesHeader");
 
-let entries = [];
+// let entries = [];
+let entries;
 
 // const diff_minutes = (dt2, dt1) => {
 
@@ -300,6 +301,8 @@ const resizeRows = () => {
 const pageLoadDisplay = () => {
     resizeRows();
     if (localStorage.getItem("entries")) {
+        entries = JSON.parse(localStorage.getItem("entries"));
+        console.log(entries)
         displayLog();
         console.log("existing user");
     } else {
