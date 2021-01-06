@@ -7,7 +7,6 @@ const plusSign = document.querySelector("#plusSign");
 const practiceTimerStartBtn = document.querySelector("#practiceTimerStartBtn");
 const practiceTimerEndBtn = document.querySelector("#practiceTimerEndBtn");
 const practiceTimerResetBtn = document.querySelector("#practiceTimerResetBtn");
-// const timerDisplay = document.querySelector("#timer");
 
 const startDateInput = document.querySelector("#startDateInput");
 const endDateInput = document.querySelector("#endDateInput");
@@ -434,42 +433,6 @@ const clearPracticeLog = () => {
 
 const testFunction = () => {
 
-    // console.log('howdy')
-
-    // let startTime = new Date(dateInput.value);
-    // startTime.setMinutes( startTime.getMinutes() + startTime.getTimezoneOffset() );
-    // // date = date.toDateString();
-    // startTimeInput = startTimeInput.value.split(":")
-    // startTime.setHours(startTimeInput[0])
-    // startTime.setMinutes(startTimeInput[1])
-
-    // let endTime = new Date(dateInput.value);
-    // endTime.setMinutes( endTime.getMinutes() + endTime.getTimezoneOffset() );
-    // endTimeInput = endTimeInput.value.split(":")
-    // endTime.setHours(endTimeInput[0])
-    // endTime.setMinutes(endTimeInput[1])
-    
-    // const totalTime = diff_minutes(endTime, startTime)
-    
-    // let startTime = new Date(dateInput.value);
-    // startTime.setMinutes( startTime.getMinutes() + startTime.getTimezoneOffset() );
-    // const startTimeInputArr = startTimeInput.value.split(":")
-    // startTime.setHours(startTimeInputArr[0])
-    // startTime.setMinutes(startTimeInputArr[1])
-
-    let displayEntries = localStorage.getItem("entries");
-    displayEntries = JSON.parse(displayEntries);
-    displayEntries.sort(function(a, b) {
-        var dateA = new Date(a.startTime), dateB = new Date(b.endTime);
-        return dateA - dateB;
-    });
-
-    myPracticeLog.textContent = ""
-
-    displayEntries.forEach(ent => {
-        const date = new Date(ent.startTime)
-        console.log(date.toString())
-    })
 }
 
 

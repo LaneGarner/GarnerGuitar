@@ -166,69 +166,69 @@
         <p>Think about why you decided to play guitar. If you’re like most students, you’d like to pick up an instrument and be able to play a song. Throughout this book, we will focus on methods to improve technique and overall understanding of the inner workings of music. It is equally important to develop your repertoire (or what songs you know) as you work through this book. In many ways having a large repertoire of music committed to memory is more important than other skills like understanding theory or reading sheet music. Not only will this repertoire determine what you play when you pick up your instrument but also what you can play with other people. Playing music with others is integral to developing as a musician. Many songs are based on similar chord progressions or melodic content. Building a large repertoire will also help you to recognize patterns and similarities between songs—only increasing your repertoire more.</p>
         <p>It may be difficult to decide which songs to begin with. In many ways, your specific repertoire doesn’t really matter. Learning songs you like will help you retain interest in progressing and improving. If you enjoy hearing a song, you’ll want to play it. Sounds obvious, right? Start with a list of five songs.</p>
       <h2>Five songs I want to learn:</h2>
-      <p><em><strong>Note: </strong>Your song list will save on this browser but <strong>may need to be reentered</strong> if you visit this site from another browser.</em></p>
-        <form onsubmit="return false">
-          <label for="song1">1.</label>
-          <input type="text" id="song1" class="song-input" placeholder="Enter song and artist here">
-          <button id="song1Add" onclick="addSong('song1')">Add</button>
-          <span id="song1Display"></span>
-          <i id="song1Edit" class="fas fa-edit" onclick="editSong('song1')"></i>
-          <i id="song1EditConfirm" class="fas fa-undo" onclick="editCancel('song1')"></i>          
-          <i id="song1EditCancel" class="fas fa-check" onclick="addSong('song1')"></i>
-          <i id="song1Remove" class="fas fa-times" onclick="removeSong('song1')"></i>
-        </form>
-        <form onsubmit="return false">
-          <label for="song2">2.</label>
-          <input type="text" id="song2" class="song-input" placeholder="Enter song and artist here">
-          <button id="song2Add" onclick="addSong('song2')">Add</button>
-          <span id="song2Display"></span>
-          <i id="song2Edit" class="fas fa-edit" onclick="editSong('song2')"></i>
-          <i id="song2EditConfirm" class="fas fa-undo" onclick="editCancel('song2')"></i>          
-          <i id="song2EditCancel" class="fas fa-check" onclick="addSong('song2')"></i>
-          <i id="song2Remove" class="fas fa-times" onclick="removeSong('song2')"></i>
-        </form>
-        <form onsubmit="return false">
-          <label for="song3">3.</label>
-          <input type="text" id="song3" class="song-input" placeholder="Enter song and artist here">
-          <button id="song3Add" onclick="addSong('song3')">Add</button>
-          <span id="song3Display"></span>
-          <i id="song3Edit" class="fas fa-edit" onclick="editSong('song3')"></i>
-          <i id="song3EditConfirm" class="fas fa-undo" onclick="editCancel('song3')"></i>          
-          <i id="song3EditCancel" class="fas fa-check" onclick="addSong('song3')"></i>
-          <i id="song3Remove" class="fas fa-times" onclick="removeSong('song3')"></i>
-        </form>
-        <form onsubmit="return false">
-          <label for="song4">4.</label>
-          <input type="text" id="song4" class="song-input" placeholder="Enter song and artist here">
-          <button id="song4Add" onclick="addSong('song4')">Add</button>
-          <span id="song4Display"></span>
-          <i id="song4Edit" class="fas fa-edit" onclick="editSong('song4')"></i>
-          <i id="song4EditConfirm" class="fas fa-undo" onclick="editCancel('song4')"></i>          
-          <i id="song4EditCancel" class="fas fa-check" onclick="addSong('song4')"></i>
-          <i id="song4Remove" class="fas fa-times" onclick="removeSong('song4')"></i>
-        </form>
-        <form onsubmit="return false">
-          <label for="song5">5.</label>
-          <input type="text" id="song5" class="song-input" placeholder="Enter song and artist here">
-          <button id="song5Add" onclick="addSong('song5')">Add</button>
-          <span id="song5Display"></span>
-          <i id="song5Edit" class="fas fa-edit"onclick="editSong('song5')"></i>
-          <i id="song5EditConfirm" class="fas fa-undo" onclick="editCancel('song5')"></i>          
-          <i id="song5EditCancel" class="fas fa-check" onclick="addSong('song5')"></i>
-          <i id="song5Remove" class="fas fa-times" onclick="removeSong('song5')"></i>
-        </form>
-        <button onclick="clearSongList()">Clear song list</button>
-
+      <form onsubmit="return false">
+        <label for="song1">1.</label>
+        <input type="text" id="song1" class="song-input" placeholder="Enter song and artist here">
+        <button id="song1Add" onclick="addSong('song1')">Add</button>
+        <span id="song1Display"></span>
+        <i id="song1Edit" class="fas fa-edit" onclick="editSong('song1')"></i>
+        <i id="song1EditConfirm" class="fas fa-undo" onclick="editCancel('song1')"></i>          
+        <i id="song1EditCancel" class="fas fa-check" onclick="addSong('song1')"></i>
+        <i id="song1Remove" class="fas fa-times" onclick="removeSong('song1')"></i>
+      </form>
+      <form onsubmit="return false">
+        <label for="song2">2.</label>
+        <input type="text" id="song2" class="song-input" placeholder="Enter song and artist here">
+        <button id="song2Add" onclick="addSong('song2')">Add</button>
+        <span id="song2Display"></span>
+        <i id="song2Edit" class="fas fa-edit" onclick="editSong('song2')"></i>
+        <i id="song2EditConfirm" class="fas fa-undo" onclick="editCancel('song2')"></i>          
+        <i id="song2EditCancel" class="fas fa-check" onclick="addSong('song2')"></i>
+        <i id="song2Remove" class="fas fa-times" onclick="removeSong('song2')"></i>
+      </form>
+      <form onsubmit="return false">
+        <label for="song3">3.</label>
+        <input type="text" id="song3" class="song-input" placeholder="Enter song and artist here">
+        <button id="song3Add" onclick="addSong('song3')">Add</button>
+        <span id="song3Display"></span>
+        <i id="song3Edit" class="fas fa-edit" onclick="editSong('song3')"></i>
+        <i id="song3EditConfirm" class="fas fa-undo" onclick="editCancel('song3')"></i>          
+        <i id="song3EditCancel" class="fas fa-check" onclick="addSong('song3')"></i>
+        <i id="song3Remove" class="fas fa-times" onclick="removeSong('song3')"></i>
+      </form>
+      <form onsubmit="return false">
+        <label for="song4">4.</label>
+        <input type="text" id="song4" class="song-input" placeholder="Enter song and artist here">
+        <button id="song4Add" onclick="addSong('song4')">Add</button>
+        <span id="song4Display"></span>
+        <i id="song4Edit" class="fas fa-edit" onclick="editSong('song4')"></i>
+        <i id="song4EditConfirm" class="fas fa-undo" onclick="editCancel('song4')"></i>          
+        <i id="song4EditCancel" class="fas fa-check" onclick="addSong('song4')"></i>
+        <i id="song4Remove" class="fas fa-times" onclick="removeSong('song4')"></i>
+      </form>
+      <form onsubmit="return false">
+        <label for="song5">5.</label>
+        <input type="text" id="song5" class="song-input" placeholder="Enter song and artist here">
+        <button id="song5Add" onclick="addSong('song5')">Add</button>
+        <span id="song5Display"></span>
+        <i id="song5Edit" class="fas fa-edit"onclick="editSong('song5')"></i>
+        <i id="song5EditConfirm" class="fas fa-undo" onclick="editCancel('song5')"></i>          
+        <i id="song5EditCancel" class="fas fa-check" onclick="addSong('song5')"></i>
+        <i id="song5Remove" class="fas fa-times" onclick="removeSong('song5')"></i>
+      </form>
+      <button onclick="clearSongList()">Clear song list</button>
+      <p><em><strong>Note: </strong>Your song list will save on this browser but <strong><u>will need to be re-entered</u> if you visit this site from another browser.</strong></em></p>
+      
       <h2>Learn the classics</h2>
-        <p>In addition to songs you particularly like, it is also valuable to learn the classics. The history of guitar music is vast, and there is no better way to learn the instrument than from the masters. When parts of a song are too difficult for a beginner, it is always possible to learn a simplified version. You can revisit these songs while you grow as a musician. Learn the more intricate details when you are ready. This list is not comprehensive but is an excellent starting point. How many of these songs have you heard? Some may be unfamiliar, though you have likely heard most of them many times. Maybe there are even some songs you haven’t heard that you would like. Spend some time listening to and becoming familiar with all of these songs even if you aren’t quite ready to learn them. If you learn a song that you don’t particularly like, you have not wasted your time. Knowing what music you dislike may inform your musical taste as much or even more than knowing what music you like. Therefore, finding and being exposed to new music is always beneficial. Use the list on the next few 20 pages for inspiration while choosing songs to learn.</p>
-        <img class="small-image" src="images/ag-black-background.jpg" alt="acoustic guitar with black background">
+      <p>In addition to songs you particularly like, it is also valuable to learn the classics. The history of guitar music is vast, and there is no better way to learn the instrument than from the masters. When parts of a song are too difficult for a beginner, it is always possible to learn a simplified version. You can revisit these songs while you grow as a musician. Learn the more intricate details when you are ready. This list is not comprehensive but is an excellent starting point. How many of these songs have you heard? Some may be unfamiliar, though you have likely heard most of them many times. Maybe there are even some songs you haven’t heard that you would like. Spend some time listening to and becoming familiar with all of these songs even if you aren’t quite ready to learn them. If you learn a song that you don’t particularly like, you have not wasted your time. Knowing what music you dislike may inform your musical taste as much or even more than knowing what music you like. Therefore, finding and being exposed to new music is always beneficial. Use the list on the next few 20 pages for inspiration while choosing songs to learn.</p>
+      <img class="small-image" src="images/ag-black-background.jpg" alt="acoustic guitar with black background">
       <h2>How to practice repertoire</h2>
         <p>Use the practice skills discussed previously when learning new repertoire. Devote part of your practice time to learning new music and part to reviewing songs you have already learned. This review is especially important as it is surprisingly easy to forget songs you once knew as your repertoire database grows. You can always learn simplified versions of any song to begin with and learn the more difficult parts as you get better at guitar. Use the repertoire list pages in the resources section at the end of this book to keep track of your repertoire. Be sure to add any and all new songs learned. If you don’t ultimately like a song that you learned, don’t hesitate to remove it from your list. There is no reason to waste practice time with music you dislike once you’ve learned what you can from a less-than-enjoyable song. Play songs you learn in as many settings as possible: by yourself, with other musicians on any instrument, with a full band, and especially along with recordings. Your repertoire list will grow and evolve with your skills and as your interests in new styles evolves. It is truly gratifying to look back at a long repertoire list after years of studying music.</p>
-      <h2>300 iconic guitar songs</h2>
+      <h2>300+ iconic guitar songs</h2>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLHyjW_PUXxkqlk0EihEg6bXaRHDEXrVsG" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <p class="tip"><em><strong>Tip:</strong> Click the <i class="fas fa-align-justify"></i> icon above to access the YouTube playlist.</em></p>
+        <p class="tip"><em><strong>Tip:</strong> Use the <i class="fas fa-align-justify"></i> icon above to access the YouTube playlist.</em></p>
         <ol>
-          <li>"All Along The Watchtower"-Jimi Hendrix* </li>
+          <li>"All Along The Watchtower"-Jimi Hendrix* <iframe allow="autoplay *; encrypted-media *; fullscreen *" frameborder="0" height="150" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/album/all-along-the-watchtower/344799413?i=344799727"></iframe></li>
           <li> "All Day and All Night" -The Kinks</li>
           <li> "Amarillo By Morning" -George Straight</li>
           <li> "American Girl" -Tom Petty</li>
