@@ -16,6 +16,11 @@ nav {
   /* overflow-x: auto; */
 }
 
+#desktop-nav {
+  display: flex;
+  justify-content: space-around;
+}
+
 #mobile-nav {
   display: none;
 }
@@ -62,7 +67,7 @@ nav {
   text-shadow: 2px 2px #83e7cb;
 }
 
-.logo-heading:hover {
+.logo-heading:active {
   transform: translateY(-2px);
   color: #83e7cb;
   text-shadow: 2px 2px #333;
@@ -125,7 +130,7 @@ nav a {
 .nav-link:hover, .dropdown:hover .dropbtn {
   background-color: #83e7cb;
   color: #333; 
-  border-radius: 5px;
+  border-radius: 30px;
   transition-duration: 100ms;
   /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
   /* border-bottom: 20px solid #83e7cb; */
@@ -141,7 +146,6 @@ nav a {
   background-color: #565B5EE9;
   min-width: 160px;
   z-index: 1;
-  border-top: 6px solid #83e7cb;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   /* border-radius: 8px; */
 }
@@ -238,16 +242,9 @@ nav a {
   font-family: "Bebas Neue", sans-serif;
   text-align: center;
   font-size: 3em;
-  margin: 50px auto 20px;
+  margin: 50px auto 0px;
   padding: 20px;
   text-shadow: 2px 2px #83e7cb;
-}
-
-.second-header:hover {
-  transform: translateY(-2px);
-  color: #83e7cb;
-  text-shadow: 2px 2px #333;
-  transition-duration: 100ms;
 }
 
 #sign-up-paragraph {
@@ -621,7 +618,3 @@ input[type="email"], input[type="text"] {
     display: inline;
   }
 }
-
-
-
-
