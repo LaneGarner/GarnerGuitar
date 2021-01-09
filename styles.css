@@ -596,7 +596,7 @@ input[type="email"], input[type="text"] {
   }
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 800px) {
   .cards {
     flex-direction: column;
   }
