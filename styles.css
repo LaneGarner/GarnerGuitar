@@ -545,7 +545,7 @@ input[type="email"], input[type="text"] {
 .email-signup-button {
   border-radius: 30px;
   /* border: 5px solid #83e7cb; */
-  color: #83e7cb;
+  background: #83e7cb;
   font-size: 20px;
   padding: 10px;
   margin: 20px;
@@ -555,10 +555,10 @@ input[type="email"], input[type="text"] {
   text-align: center;
 }
 
-.email-signup-button:hover {
+/* .email-signup-button:hover {
   background: #83e7cb;
 
-}
+} */
 
 .mce_inline_error {
   color: tomato;
