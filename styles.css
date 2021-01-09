@@ -4,6 +4,7 @@
   padding: 0;
   font-family: 'Source Sans Pro', sans-serif;
   /* font-family: raleway, sans-serif; */
+  /* box-sizing: border-box; */
 }
 
 /* NAV */
@@ -18,7 +19,7 @@ nav {
 
 #desktop-nav {
   display: flex;
-  justify-content: space-around;
+  align-items: flex-end;
 }
 
 #mobile-nav {
@@ -61,7 +62,7 @@ nav {
 .logo-heading {
   color: #333;
   font-family: "Bebas Neue", sans-serif;
-  font-size: clamp(2.8em, 3.5vw, 4em);
+  font-size: clamp(2.5em, 3.5vw, 4em);
   padding: 20px 25px 20px 0px;
   margin-top: 5px;
   text-shadow: 2px 2px #83e7cb;
@@ -138,6 +139,8 @@ nav a {
 
 .nav-link-active {
   border-bottom: 4px solid #83e7cb;
+  box-sizing: border-box;
+  padding-bottom: 10px;
 }
 
 .dropdown-content {
@@ -595,7 +598,15 @@ input[type="email"], input[type="text"] {
   .menu-icon {
     display: none;
   }
+  .nav-link, .dropdown .dropbtn {
+    padding: 10px;
+  }
+  .nav-link-active {
+    padding-bottom: 6px;
+  }
 }
+
+
 
 @media screen and (max-width: 800px) {
   .cards {
@@ -607,8 +618,7 @@ input[type="email"], input[type="text"] {
   }
 
   #desktop-nav {
-    display: flex;
-    flex-direction: column;
+    display: none;
   }
 
   #veg-burger-icon {
