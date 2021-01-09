@@ -544,7 +544,7 @@ input[type="email"], input[type="text"] {
 
 .email-signup-button {
   border-radius: 30px;
-  /* border: 5px solid #83e7cb; */
+  border: none;
   background: #83e7cb;
   font-size: 20px;
   padding: 10px;
