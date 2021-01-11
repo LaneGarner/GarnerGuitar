@@ -171,6 +171,9 @@ nav a {
 }
 
 .divider {
+}
+
+#desktop-prlx {
   background: url(images/online-guitar-lessons.jpg);
   min-height: 500px; 
   background-attachment: fixed;
@@ -185,15 +188,19 @@ nav a {
   border-radius: 4px;
 }
 
+#mobile-fold {
+
+}
+
+#mobile-header-img {
+  width: 100vw;
+  margin-top: 100px;
+}
+
 #email-image {
   width: 300px;
   /* margin: 20px; */
   border-radius: 100%;
-}
-
-#email-image:hover {
-  width: 310px;
-  transition-duration: 1s; 
 }
 
 .tagline-bckgrnd {
@@ -245,7 +252,7 @@ nav a {
   font-family: "Bebas Neue", sans-serif;
   text-align: center;
   font-size: 3em;
-  margin: 50px auto 0px;
+  margin: 0 auto 0px;
   padding: 20px;
   text-shadow: 2px 2px #83e7cb;
 }
@@ -253,10 +260,11 @@ nav a {
 #sign-up-paragraph {
   margin: 20px;
   padding: 10px;
-  width: 30%;
+  width: 40%;
   color: white;
   background: #000000BB;
   border-radius: 4px;
+  text-align: center;
 }
 
 .required {
@@ -314,15 +322,15 @@ p {
 }
 
 .card-title {
-  font-family: "Bebas Neue", sans-serif;
+  /* font-family: "Bebas Neue", sans-serif; */
   font-size: 2.5rem;
-  color: #565B5E;
+  /* color: #565B5E; */
   margin-bottom: 20px;
   /* text-shadow: 2px 2px #83e7cb; */
 }
 
 .card-button {
-  color: white;
+  color: #333;
   display: block;
   background: #E3C24D;
   border: none;
@@ -336,10 +344,10 @@ p {
 }
 
 .card-button:hover {
-  background-color:  #e4c34b;
+  /* background-color:  #e4c34b; */
   color: #333;
   transition-duration: 100ms; 
-  /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4); */
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
 }
 
 .course-div a, .card a, .print-card a {
@@ -387,14 +395,14 @@ button a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 20px 100px 100px 70px;
-  
+  margin: 20px auto 100px auto;
 }
 
 .about p {
   text-align: justify;
   padding: 1em 2em 1em 2em;
   font-size: 16px;
+  margin: auto 100px;
 }
 
 .profilePic {
@@ -402,12 +410,6 @@ button a {
   width: 400px;
   margin: 30px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-}
-
-.profilePic:hover {
-  transition-duration: 1s; 
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
-  width: 410px;
 }
 
 footer {
@@ -457,8 +459,13 @@ footer p {
 }
 
 .social i:hover {
-  text-shadow: 2px 2px #83e7cb;
+  /* text-shadow: 2px 2px #83e7cb; */
+  color: #AAA;
   transition-duration: 100ms;
+}
+
+.social i:active {
+  color: white;
 }
 
 footer a {
@@ -466,20 +473,11 @@ footer a {
   color: 565B5E;
   text-align: center;
   text-decoration: none;
-  color: #EEE;
+  color: white;
 }
 
 .footer-nav {
   margin: 40px;
-}
-
-.footer-nav a:hover {
-  font-size: 16.5px;
-}
-
-#mailto:hover {
-  font-size: 16.2px;
-  transition-duration: 100ms;
 }
 
 .footer-logo {
@@ -494,7 +492,7 @@ footer a {
 }
 
 .copyright-text {
-  text-decoration: overline;
+  color: #565B5E
 }
 
 .copyright p {
@@ -516,7 +514,7 @@ footer a {
 .print-card {
   display: flex;
   flex-direction: column;
-  border: solid grey 1px;
+  border: none;
   border-radius: 4px;
   align-items: center;
   margin: 10px;
@@ -539,7 +537,7 @@ footer a {
 }
 
 input[type="email"], input[type="text"] {
-  font-size: 20px;
+  font-size: 16px;
   text-align: left;
   padding: 5px 10px;
   /* width: 600px; */
@@ -606,9 +604,47 @@ input[type="email"], input[type="text"] {
   }
 }
 
+@media screen and (min-width: 800px) {
+  .fa-bars, #mobile-fold {
+    display: none;
+  }
+}
 
+/* primary mobile view */
 
 @media screen and (max-width: 800px) {
+  #desktop-prlx {
+    display: none;
+  }
+
+  .thumbnail-logo {
+    width: 60px;
+  }
+
+  .tagline-bckgrnd:nth-of-type(1) {
+    margin-top: 0px;
+  }
+
+  #mobile-fold-taglines {
+    position: absolute;
+    top: 0;
+    margin-top: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    /* text-align: center; */
+  }
+
+  .divider h2 {
+    font-size: 20px;
+    padding: 20px;
+    margin-top: 20px;
+    width: 70vw;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
   .cards {
     flex-direction: column;
   }
@@ -627,5 +663,36 @@ input[type="email"], input[type="text"] {
 
   .fa-bars {
     display: inline;
+    position: absolute;
+    right: 0;
+    padding: 50px;
+  }
+
+  #sign-up-paragraph {
+    width: 60%;
+  }
+
+  .about p {
+    margin: auto 20px;
+  }
+
+  .profilePic, #email-image {
+    width: clamp(200px, 45%, 400px);
+  }
+
+  .video-element {
+    width: 90%;
+  }
+}
+
+/* remove site headline for tiny screens */
+
+@media screen and (max-width: 425px) {
+  .logo-heading {
+    display: none;
+  }
+  #mobile-fold-taglines {
+    margin-top: 20px;
+    position: relative;
   }
 }
