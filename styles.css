@@ -266,10 +266,29 @@ nav a {
   color : #333;
   font-family: "Bebas Neue", sans-serif;
   text-align: center;
-  font-size: 3em;
+  font-size: clamp(10vw, 4vw, 20vw);
   margin: 0 auto 0px;
   padding: 20px;
   text-shadow: 2px 2px #83e7cb;
+}
+
+#mailform-shift h2 {
+  color : #333;
+  font-family: "Bebas Neue", sans-serif;
+  text-align: center;
+  font-size: clamp(15vw, 4vw, 28vw);
+  margin: 0 auto 0px;
+  /* padding: 20px; */
+  text-shadow: 2px 2px #83e7cb;
+  /* position: relative; */
+}
+
+#mailform-shift {
+  transform: translateY(-4.3em);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
 }
 
 #sign-up-paragraph {
@@ -317,13 +336,13 @@ p {
 .cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
   text-align: center;
   margin-bottom: 30px;
 }
 
 .card {
-  margin: 2rem;
+  /* margin: 2rem; */
   padding: 20px auto;
   display: flex;
   justify-content: center;
@@ -338,9 +357,9 @@ p {
 
 .card-title {
   /* font-family: "Bebas Neue", sans-serif; */
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   /* color: #565B5E; */
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   /* text-shadow: 2px 2px #83e7cb; */
 }
 
@@ -617,6 +636,9 @@ input[type="email"], input[type="text"] {
   .nav-link-active {
     padding-bottom: 6px;
   }
+  #mailform-shift {
+    transform: translateY(-3.8em);
+  }  
 }
 
 @media screen and (min-width: 800px) {
@@ -670,7 +692,7 @@ input[type="email"], input[type="text"] {
   }
 
   .divider h2 {
-    font-size: 20px;
+    font-size: 18px;
     padding: 20px;
     margin-top: 20px;
     width: 70vw;
@@ -716,11 +738,16 @@ input[type="email"], input[type="text"] {
   .video-element {
     width: 90%;
   }
+
+  #mailform-shift {
+    transform: translateY(-2.6em);
+  }  
+
 }
 
 /* remove site headline for tiny screens */
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 400px) {
   .thumbnail-logo {
     width: 20%;
     margin: 5%;
@@ -734,4 +761,7 @@ input[type="email"], input[type="text"] {
     margin-top: 20px;
     position: relative;
   }
+  #mailform-shift {
+    transform: translateY(-1.8em);
+  } 
 }
