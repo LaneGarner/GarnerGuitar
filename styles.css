@@ -43,6 +43,10 @@
   text-decoration: none;
 }
 
+#mobile-nav a:active {
+  color:  #83e7cb;
+}
+
 nav a {
   display: inline-block;
 }
