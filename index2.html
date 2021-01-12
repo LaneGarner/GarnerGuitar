@@ -24,14 +24,14 @@
   <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
   <script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]="EMAIL";ftypes[0]="email";fnames[1]="FNAME";ftypes[1]="text";}(jQuery));var $mcj = jQuery.noConflict(true);</script>
   
-  <script src="main.js"></script>
+  <script src="main.js" defer></script>
   <link rel="stylesheet" Type="text/css" href="styles.css" /> 
   <title>Garner Guitar</title>
 </head>
 <body>
 
 <header>
-  <nav>
+  <nav id="main-nav">
     <div class="navbar">
       <a href="index.html">
       <div id="logo-header">
@@ -40,7 +40,8 @@
         </div>
       </a>
       
-      <i class="fas fa-bars"></i>
+      <i id="veggie-burger" class="fas fa-bars"></i>
+      <i id="veggie-burger-expanded" class="fas fa-chevron-down"></i>
 
       <div id="desktop-nav">
         <a class="nav-link" href="courses/index.html">
@@ -93,6 +94,12 @@
       </span> -->
     </div>
   </nav>
+  <div id="mobile-nav">
+    <a href="/courses/index.html">Courses</a>
+    <a href="/book.html">Method book</a>
+    <a href="https://austintexasguitarlessons.com">Lessons</a>
+    <a href="courses.html">Resources</a>
+  </div>
 </header>
 <!-- <body> -->
     <main>
@@ -181,10 +188,14 @@
       </div>
       <div class="about">
         <h2 class="second-header">About Me</h2>
-        <a href="http://www.lanegarner.com"><img src="images/lane-garner-guitar-lessons-online-austin-texas.jpg"class="profilePic" alt="Photo of Lane Garner"></a>
-        <p><strong>Hi, I'm Lane Garner.</strong> I’ve been teaching guitar lessons for over ten years and have experience with students of all ages and experience levels. I offer private guitar lessons to students in Austin, TX wishing to learn guitar or develop their guitar and music skills beyond a beginner level. We will take your playing to the next level by studying music theory, technique, jazz and blues improvisation, gear and tone, reading music, playing styles, and more.</p>
-        <p>Whether you just started playing guitar or you’ve played for years there is always something new to learn about music. My primary goal as a teacher is to focus intently on specific aspects of each student's musicianship-technique, harmonic concepts, ear-training, theory, etc while making each lesson fun for the student. It is my goal to improve the student’s playing by the end of each and every lesson. I find it important to teach fundamentals of music as well as any additional material the student is interested in learning. In my 10+ years of teaching guitar I’ve worked with students of all levels and ages 5 to 65. I’ve taught total beginners, intermediate players, college music majors, and even working professional musicians.</p>
-        <p>I hold Masters and Bachelors degrees in Jazz Studies from the University of North Texas and as a performer I have traveled all over the country/world playing various styles ranging from jazz, rock, and pop to classical, country, worship music, and more. I am currently filling my lesson studio here in Austin.</p>
+        <!-- <a href="http://www.lanegarner.com"> -->
+          <!-- <img src="images/lane-garner-guitar-lessons-online-austin-texas.jpg"class="profilePic" alt="Photo of Lane Garner"> -->
+        <!-- </a> -->
+        <p><strong>
+          <img src="images/lane-garner-guitar-lessons-online-austin-texas.jpg"class="profilePic" alt="Photo of Lane Garner">
+          Hi, I'm Lane Garner.</strong> I’ve been teaching guitar lessons for over ten years and have experience with students of all ages and experience levels. I offer private guitar lessons to students in Austin, TX wishing to learn guitar or develop their guitar and music skills beyond a beginner level. We will take your playing to the next level by studying music theory, technique, jazz and blues improvisation, gear and tone, reading music, playing styles, and more.
+          <br><br>Whether you just started playing guitar or you’ve played for years there is always something new to learn about music. My primary goal as a teacher is to focus intently on specific aspects of each student's musicianship-technique, harmonic concepts, ear-training, theory, etc while making each lesson fun for the student. It is my goal to improve the student’s playing by the end of each and every lesson. I find it important to teach fundamentals of music as well as any additional material the student is interested in learning. In my 10+ years of teaching guitar I’ve worked with students of all levels and ages 5 to 65. I’ve taught total beginners, intermediate players, college music majors, and even working professional musicians. 
+          <br><br>I have Masters and Bachelors degrees in Jazz Studies from the University of North Texas and as a performer I have traveled all over the country/world playing various styles ranging from jazz, rock, and pop to classical, country, worship music, and more. I am currently filling my lesson studio here in Austin.</p>
       </div>
       <div class="social">
         <h3 class="social-element" id="follow">Social</h3>
