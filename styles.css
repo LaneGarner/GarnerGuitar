@@ -450,6 +450,8 @@ button a {
   border: none;
   border-radius: 8px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  width: auto;
+  height: auto;
 }
 
 .about {
@@ -687,7 +689,7 @@ input[type="submit"] {
 }
 
 @media screen and (min-width: 800px) {
-  .fa-bars, #mobile-fold, #veggie-burger-expanded, #mobile-nav {
+  .fa-bars, #mobile-fold, #veggie-burger-expanded, #veggie-burger, #mobile-nav {
     display: none;
   }
   /* #mobile-nav {
@@ -788,7 +790,8 @@ input[type="submit"] {
   }
 
   .video-element {
-    width: 90%;
+    /* width: 90%; */
+    /* height: 100; */
   }
 
   #mailform-shift {
@@ -801,7 +804,7 @@ input[type="submit"] {
 
 }
 
-/* remove site headline for tiny screens */
+/* tiny screens */
 
 @media screen and (max-width: 400px) {
   .thumbnail-logo {
@@ -810,9 +813,9 @@ input[type="submit"] {
     min-width: 44px;
   }
 
-  .logo-heading {
+  /* .logo-heading {
     display: none;
-  }
+  } */
   #mobile-fold-taglines {
     margin-top: 20px;
     position: relative;
