@@ -18,6 +18,12 @@ veggieBurgerExpanded.addEventListener("click", () => {
     veggieBurger.style.display = "inline";
 })
 
+document.addEventListener("scroll", () => {
+    mobileNav.style.display = "none";
+    veggieBurgerExpanded.style.display = "none";
+    veggieBurger.style.display = "inline";
+})
+
 
 // }
 
