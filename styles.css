@@ -4,7 +4,7 @@
   padding: 0;
   font-family: 'Source Sans Pro', sans-serif;
   /* font-family: raleway, sans-serif; */
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
 }
 
 /* NAV */
@@ -523,6 +523,7 @@ footer a {
 
 footer {
   padding: 1em;
+  width: 100vw;
 }
 
 .footer-logo {
