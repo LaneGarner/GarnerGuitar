@@ -620,6 +620,11 @@ input[type="email"], input[type="text"] {
   text-align: center;
 }
 
+input[type="submit"] {
+  background: #83e7cb;
+  padding: 15px;
+}
+
 /* .email-signup-button:hover {
   background: #83e7cb;
 
