@@ -34,7 +34,7 @@
   /* width: 40%; */
   border-bottom-left-radius: 12px;
   text-align: center;
-  /* display: none; */
+  display: none;
 }
 
 #mobile-nav a {
