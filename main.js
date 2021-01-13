@@ -1,6 +1,8 @@
 const veggieBurger = document.getElementById("veggie-burger");
 const veggieBurgerExpanded = document.getElementById("veggie-burger-expanded");
 const mobileNav = document.getElementById("mobile-nav");
+const heading = document.querySelector(".logo-heading");
+const thumbnailLogo = document.querySelector(".thumbnail-logo");
 const x = window.matchMedia("(max-width: 800px)")
 
 
@@ -21,10 +23,31 @@ veggieBurgerExpanded.addEventListener("click", () => {
 
 document.addEventListener("scroll", () => {
     if (x.matches) {
-    mobileNav.style.display = "none";
-    veggieBurgerExpanded.style.display = "none";
-    veggieBurger.style.display = "inline";
-    }
+        mobileNav.style.display = "none";
+        veggieBurgerExpanded.style.display = "none";
+        veggieBurger.style.display = "inline";
+    } 
+})
+
+document.addEventListener("scroll", () => {
+    // if (document.scrollTop === 0) {
+        
+        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+            thumbnailLogo.style.width = "5vw"
+            heading.style.fontSize = "5vw";
+        } else {
+            thumbnailLogo.style.width = "8vw";
+            heading.style.fontSize = "8vw";
+        }
+
+    // }
+        
+    
+    // if (x.matches) {
+    //     mobileNav.style.display = "none";
+    //     veggieBurgerExpanded.style.display = "none";
+    //     veggieBurger.style.display = "inline";
+    // } 
 })
 
 window.addEventListener("resize", () => {

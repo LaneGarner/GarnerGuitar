@@ -87,6 +87,7 @@ nav {
   min-width: 50px;
   padding-right: 5px;
   transform: translateY(-2px);
+  transition: 0.5s;
 }
 
 .logo-heading {
@@ -97,6 +98,7 @@ nav {
   /* padding: 20px 25px 20px 0px; */
   /* margin-top: 5px; */
   text-shadow: 2px 2px #83e7cb;
+  transition: 0.5s;
 }
 
 .logo-heading:active {
@@ -116,7 +118,7 @@ nav a {
   padding: 14px 16px;
   /* margin: 10px; */
   text-decoration: none;
-  font-size: clamp(.9em, 1.3vw, 1.8em);
+  font-size: clamp(.9em, 1.3vw, 1.5em);
   transform: translateY(-11px);
   /* font-size: 18px; */
   border: none;
