@@ -1,13 +1,23 @@
+
+
+#mobile-nav {
+  margin-top: 15px;
+}
+
 .course-body {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 80px;
+  margin-top: 15%;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
 }
 
 .course-header {
-  width: 100%;
-  margin-top: 20px;
+  /* width: 100%; */
+  /* margin-top: 20px; */
 }
 
 h2, h3 {
@@ -17,8 +27,9 @@ h2, h3 {
 
 .course-text {
   /* padding: 20px 180px; */
-  text-align: center;
-  margin: 2em;
+  /* text-align: center; */
+  margin: 10%;
+  width: 80%;
   color: #111;
   font-weight: 100;
 }
@@ -96,15 +107,29 @@ h2, h3 {
 }
 
 @media screen and (min-width: 800px) {
-  .course-header {
-    margin-top: 8%;
+  .course-body {
+    /* margin-top: 3em; */
   }
 }
-
 @media screen and (max-width: 800px) {
-    .course-div {
-        width: 65%;
-        min-width: 200px;
-
+  .course-body {
+    margin-top: 100px;
+  }
+  .course-div {
+      width: 80%;
+      min-width: 200px;
+      font-size: 2.6vw;
+    }
+    .card-button {
+      width: 50%;
+      text-align: center;
+      margin: auto;
+      /* font-size: 2.6vw; */
+    }
+    .course-text {
+      min-width: 200px;
+      width: 60vw;
+      /* margin: 0; */
+      text-align: center;
     }
 }

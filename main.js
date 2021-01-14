@@ -4,6 +4,7 @@ const mobileNav = document.getElementById("mobile-nav");
 const heading = document.querySelector(".logo-heading");
 const thumbnailLogo = document.querySelector(".thumbnail-logo");
 const x = window.matchMedia("(max-width: 800px)")
+const y = window.matchMedia("(max-width: 360px)")
 
 
 mobileNav.style.display = "none";
@@ -55,6 +56,7 @@ window.addEventListener("resize", () => {
         mobileNav.style.display = "none";
         veggieBurgerExpanded.style.display = "none";
         veggieBurger.style.display = "none";
+        heading.style.display = "inline";
     }
 })
 
@@ -63,7 +65,16 @@ window.addEventListener("resize", () => {
         mobileNav.style.display = "none";
         veggieBurgerExpanded.style.display = "none";
         veggieBurger.style.display = "inline";
-    }
+        heading.style.display = "inline";
+    } 
+})
+
+window.addEventListener("resize", () => {
+    if (y.matches) {
+        heading.style.display = "none";
+        // veggieBurgerExpanded.style.display = "none";
+        // veggieBurger.style.display = "inline";
+    } 
 })
 
 
