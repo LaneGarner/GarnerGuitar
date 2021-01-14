@@ -21,11 +21,15 @@ p {
 }
 
 #free-sample {
-    background: black;
+    background: #222;
     color: white;
     width: 100%;
-    margin: 0;
-    padding: 0;
+    margin-bottom: 2em;
+    padding: 5em;
+}
+
+#free-sample h2 {
+    margin-bottom: 1em;
 }
 
 #book-heading {
@@ -46,6 +50,7 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 2em;
 }
 
 .section-heading {
@@ -60,6 +65,7 @@ p {
     background: #333;
     color: white;
     padding: 2em;
+    padding-top: 4em;
     border-radius: 10px;
     list-style: none;
 }
