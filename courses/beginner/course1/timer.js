@@ -12,13 +12,6 @@ const startTimer = () => {
     tInterval = setInterval(getShowTime, 1);
     paused = 0;
     running = 1;
-    // timerDisplay.style.background = "#FF0000";
-    // timerDisplay.style.cursor = "auto";
-    // timerDisplay.style.color = "yellow";
-    // startTimerButton.classList.add('lighter');
-    // stopTimerButton.classList.remove('lighter');
-    // startTimerButton.style.cursor = "pointer";
-    // stopTimerButton.style.cursor = "pointer";
   }
 }
 
@@ -30,13 +23,7 @@ const pauseTimer = () => {
     savedTime = difference;
     paused = 1;
     running = 0;
-    // timerDisplay.style.background = "#A90000";
-    // timerDisplay.style.color = "#690000";
-    // timerDisplay.style.cursor = "pointer";
-    // startTimerButton.classList.remove('lighter');
-    // stopTimerButton.classList.add('lighter');
-    // startTimerButton.style.cursor = "pointer";
-    // stopTimerButton.style.cursor = "auto";
+    
   } else {
     startTimer();
   }
